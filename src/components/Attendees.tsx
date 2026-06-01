@@ -9,7 +9,7 @@ export default function Attendees() {
     <SectionWrapper
       id="crew"
       title="The Crew"
-      subtitle="12 deep from the Land"
+      subtitle="12 traveling from the Land (and beyond)"
     >
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {attendees.map((person, i) => (
@@ -39,7 +39,9 @@ export default function Attendees() {
               {person.role && (
                 <p
                   className={`text-xs font-medium ${
-                    person.role === "The Groom" ? "text-amber-600" : "text-charcoal-light"
+                    person.role === "The Groom"
+                      ? "text-amber-600"
+                      : "text-charcoal-light"
                   }`}
                 >
                   {person.role}
