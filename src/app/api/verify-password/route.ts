@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(req: NextRequest) {
   const { password } = await req.json();
   const crewPassword = process.env.SITE_PASSWORD || "rabblerouser2026";
-  const groomPassword = process.env.GROOM_PASSWORD || "ericray2026";
+  const groomPassword = process.env.GROOM_PASSWORD || "gettingmarried2026";
 
   const inputLower = password.toLowerCase();
   let role: "crew" | "groom" | null = null;
