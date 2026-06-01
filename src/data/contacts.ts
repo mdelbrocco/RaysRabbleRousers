@@ -5,12 +5,12 @@ export interface Contact {
 }
 
 export const contacts: Contact[] = [
+  { name: "Red Ginger", phone: "231-944-1733", context: "Friday dinner" },
   {
     name: "Cellar & Flame Steakhouse",
     phone: "231-525-0555",
-    context: "Friday dinner",
+    context: "Friday dinner alt",
   },
-  { name: "Red Ginger", phone: "231-944-1733", context: "Friday dinner alt" },
   {
     name: "The Parlor (walk-in OK)",
     phone: "231-753-3131",

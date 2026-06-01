@@ -67,7 +67,7 @@ export const itinerary: ItineraryDay[] = [
     date: "June 26",
     title: "Traverse City Day",
     emoji: "🍻",
-    summary: "Waterfront, arcade bar, brewery crawl, splurge dinner, nightlife",
+    summary: "Waterfront, arcade bar, brewery crawl, sit-down dinner, nightlife",
     color: "amber",
     activities: [
       {
@@ -114,10 +114,10 @@ export const itinerary: ItineraryDay[] = [
       },
       {
         time: "~6:30 PM",
-        title: "Cellar & Flame Steakhouse",
+        title: "Red Ginger",
         description:
-          "SPLURGE NIGHT — fine-dining steakhouse + seafood, craft cocktails. Reservation for 12. Early seating to leave runway for bars.",
-        location: "155 Garland St",
+          "Sit-down dinner — upscale Asian fusion (sushi, ramen, pan-Asian), big cocktail list. Eric's kind of spot. Reservation for 12, early seating to leave runway for bars.",
+        location: "237 E Front St",
         icon: "UtensilsCrossed",
         tag: "food",
       },
