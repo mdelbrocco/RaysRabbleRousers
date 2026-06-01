@@ -23,9 +23,8 @@ export const packingList: PackingCategory[] = [
     items: [
       "Hiking shoes or sneakers (for the dunes)",
       "Sandals / flip flops",
-      "Layers for evenings on the water",
+      "Layers for evenings",
       "Nice-ish outfit for Friday dinner",
-      "Hat / baseball cap",
     ],
   },
   {
@@ -42,9 +41,8 @@ export const packingList: PackingCategory[] = [
     category: "Optional / Fun",
     icon: "PartyPopper",
     items: [
-      "Yard games (cornhole, spikeball, etc.)",
+      "Yard games (cornhole, can jam, etc.)",
       "Bluetooth speaker",
-      "Fishing gear",
       "Cards / poker set",
       "Camera",
     ],
