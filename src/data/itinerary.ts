@@ -15,6 +15,7 @@ export interface ItineraryDay {
   emoji: string;
   summary: string;
   color: string;
+  mapUrl?: string;
   activities: Activity[];
 }
 
@@ -29,6 +30,7 @@ export const itinerary: ItineraryDay[] = [
     emoji: "🚗",
     summary: "Drive in from Cleveland, grill out, fire pit, yard games",
     color: "pine",
+    mapUrl: "https://maps.app.goo.gl/yJLWaCDgwz25yy9RA",
     activities: [
       {
         time: "Mid-morning",
@@ -71,6 +73,7 @@ export const itinerary: ItineraryDay[] = [
     summary:
       "Waterfront, arcade bar, brewery crawl, sit-down dinner, nightlife",
     color: "amber",
+    mapUrl: "https://maps.app.goo.gl/epJ4kJo8xi2Mi1P56",
     activities: [
       {
         time: "Morning",
@@ -167,6 +170,7 @@ export const itinerary: ItineraryDay[] = [
     emoji: "🏖️",
     summary: "Scenic drive, dune climb, beach, casual dinner",
     color: "bark",
+    mapUrl: "https://maps.app.goo.gl/cmzSz4y1HZec64Vr7",
     activities: [
       {
         time: "9:00 AM",
@@ -227,6 +231,7 @@ export const itinerary: ItineraryDay[] = [
     emoji: "👋",
     summary: "Pack up, easy breakfast, roll out",
     color: "pine",
+    mapUrl: "https://maps.app.goo.gl/tAMBo6FSzcJknsJXA",
     activities: [
       {
         time: "Morning",

@@ -1,6 +1,6 @@
 "use client";
 
-import { AlertTriangle, CheckSquare, ExternalLink } from "lucide-react";
+import { AlertTriangle, CheckSquare, ExternalLink, Map } from "lucide-react";
 import * as icons from "lucide-react";
 import { itinerary, weatherNote } from "@/data/itinerary";
 import type { Activity, ItineraryDay } from "@/data/itinerary";
@@ -86,6 +86,17 @@ function DayCard({ day }: { day: ItineraryDay }) {
             </h3>
             <p className="text-sm text-charcoal-light">{day.title}</p>
           </div>
+          {day.mapUrl && (
+            <a
+              href={day.mapUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-auto flex-shrink-0 inline-flex items-center gap-1.5 rounded-full bg-white/70 px-3 py-1.5 text-xs font-medium text-pine-700 shadow-sm hover:bg-white"
+            >
+              <Map className="w-3.5 h-3.5" />
+              Day map
+            </a>
+          )}
         </div>
         <p className="text-sm text-charcoal-light mt-2 italic">{day.summary}</p>
       </div>
