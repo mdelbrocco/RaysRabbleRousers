@@ -18,7 +18,7 @@ export interface ItineraryDay {
 }
 
 export const weatherNote =
-  "The dunes are the weather-sensitive day. If Saturday looks rainy and Friday's clear (or vice versa), swap the city day and dunes day. Town stuff works rain or shine — the dunes really want a clear day.";
+  "The dunes are the weather-sensitive day. If Saturday looks rainy and Friday's clear, we COULD swap the city day and dunes day. We really want a clear day for the dunes if possible.";
 
 export const itinerary: ItineraryDay[] = [
   {
@@ -26,14 +26,14 @@ export const itinerary: ItineraryDay[] = [
     date: "June 25",
     title: "Arrival & Settle In",
     emoji: "🚗",
-    summary: "Drive in from Cleveland, grill out, fire pit vibes",
+    summary: "Drive in from Cleveland, grill out, fire pit, yard games",
     color: "pine",
     activities: [
       {
         time: "Mid-morning",
         title: "Hit the Road",
         description:
-          "Cleveland → Traverse City (~6.5 hrs). Grab groceries + beer on the way in.",
+          "Cleveland → Traverse City (~6.5 hrs). Grab groceries + drinks (Costco?) on the way in.",
         icon: "Car",
         tag: "logistics",
       },
@@ -41,7 +41,7 @@ export const itinerary: ItineraryDay[] = [
         time: "Late afternoon",
         title: "Arrive at the VRBO",
         description:
-          "Unpack, claim beds, crack beers. VRBO is ~20 min from downtown TC.",
+          "Unpack, claim beds, settle in. VRBO is ~20 min from downtown TC.",
         icon: "Home",
         tag: "logistics",
       },
@@ -67,9 +67,19 @@ export const itinerary: ItineraryDay[] = [
     date: "June 26",
     title: "Traverse City Day",
     emoji: "🍻",
-    summary: "Waterfront, arcade bar, brewery crawl, sit-down dinner, nightlife",
+    summary:
+      "Waterfront, arcade bar, brewery crawl, sit-down dinner, nightlife",
     color: "amber",
     activities: [
+      {
+        time: "Morning",
+        title: "Good Harbor Coffee & Bakery",
+        description:
+          "Fuel up before the day — coffee and fresh-baked pastries to get the crew moving. Easy starting spot downtown.",
+        location: "111 W Front St",
+        icon: "Coffee",
+        tag: "food",
+      },
       {
         time: "Late morning",
         title: "Waterfront Walk",
@@ -81,7 +91,8 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "Noon",
         title: "Full Send Ramen",
-        description: "Some of the best ramen in the Midwest. Eric's spot.",
+        description:
+          "Some of the best ramen in the Midwest, allegedly. We'll let Eric be the judge of that!",
         location: "346 E Front St",
         icon: "UtensilsCrossed",
         tag: "food",
@@ -90,7 +101,7 @@ export const itinerary: ItineraryDay[] = [
         time: "Noon",
         title: "The Coin Slot",
         description:
-          "Old-school arcade bar — pinball, Guitar Hero, pool, Big Buck Hunter. Same building as Full Send.",
+          "Old-school arcade bar — pinball, Guitar Hero, pool, Big Buck Hunter. Same building as Full Send Ramen!",
         location: "346 E Front St",
         icon: "Gamepad2",
         tag: "drinks",
@@ -99,7 +110,7 @@ export const itinerary: ItineraryDay[] = [
         time: "Afternoon",
         title: "Silver Spruce Brewing",
         description:
-          "Big open space, Bull & the Bear food truck on site. ~10 min walk south of Front St.",
+          "Big open space, Bull & the Bear food truck on site. ~10 min walk (0.6 miles) south of Front St.",
         icon: "Beer",
         tag: "drinks",
       },
@@ -107,7 +118,7 @@ export const itinerary: ItineraryDay[] = [
         time: "Afternoon",
         title: "Right Brain Brewery (optional)",
         description:
-          "Brewpub with vintage pinball, great pizza + food truck. Short rideshare south of downtown.",
+          "Brewpub with vintage pinball, great pizza + food truck. Short rideshare (1.2 miles) south of downtown. TC Whiskey Stillhouse nearby as well.",
         location: "225 E 16th St",
         icon: "Beer",
         tag: "drinks",
@@ -131,9 +142,9 @@ export const itinerary: ItineraryDay[] = [
       },
       {
         time: "Late night",
-        title: "Kilkenny's",
+        title: "Kilkenny's (optional)",
         description:
-          "Underground Irish pub — dance floor, pool tables, live music, open till 2am. Best spot to close it out.",
+          "Underground Irish pub — dance floor, pool tables, live music, open till 2am. If we still have any enegy left!",
         icon: "PartyPopper",
         tag: "drinks",
       },
