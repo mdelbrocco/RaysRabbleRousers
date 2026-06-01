@@ -1,6 +1,6 @@
 "use client";
 
-import { AlertTriangle, CheckSquare } from "lucide-react";
+import { AlertTriangle, CheckSquare, ExternalLink } from "lucide-react";
 import * as icons from "lucide-react";
 import { itinerary, weatherNote } from "@/data/itinerary";
 import type { Activity, ItineraryDay } from "@/data/itinerary";
@@ -46,7 +46,19 @@ function ActivityCard({ activity }: { activity: Activity }) {
             </span>
           )}
         </div>
-        <h4 className="font-semibold text-charcoal mt-0.5">{activity.title}</h4>
+        {activity.url ? (
+          <a
+            href={activity.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-pine-700 hover:underline mt-0.5 inline-flex items-center gap-1"
+          >
+            {activity.title}
+            <ExternalLink className="w-3.5 h-3.5 flex-shrink-0" />
+          </a>
+        ) : (
+          <h4 className="font-semibold text-charcoal mt-0.5">{activity.title}</h4>
+        )}
         {activity.description && (
           <p className="text-sm text-charcoal-light mt-0.5">{activity.description}</p>
         )}

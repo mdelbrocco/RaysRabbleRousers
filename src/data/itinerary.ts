@@ -3,6 +3,7 @@ export interface Activity {
   title: string;
   description?: string;
   location?: string;
+  url?: string;
   icon: string;
   tag?: "food" | "drinks" | "activity" | "logistics" | "chill";
 }
@@ -77,6 +78,7 @@ export const itinerary: ItineraryDay[] = [
         description:
           "Fuel up before the day — coffee and fresh-baked pastries to get the crew moving. Easy starting spot downtown.",
         location: "111 W Front St",
+        url: "https://www.google.com/maps/search/?api=1&query=Good+Harbor+Coffee+%26+Bakery%2C+111+W+Front+St%2C+Traverse+City+MI",
         icon: "Coffee",
         tag: "food",
       },
@@ -85,6 +87,7 @@ export const itinerary: ItineraryDay[] = [
         title: "Waterfront Walk",
         description:
           "Head into TC (~20 min). Walk Front Street & the Grand Traverse Bay waterfront. Clinch Park beach is at the bottom of downtown.",
+        url: "https://www.google.com/maps/search/?api=1&query=Clinch+Park%2C+Traverse+City+MI",
         icon: "Waves",
         tag: "activity",
       },
@@ -94,6 +97,7 @@ export const itinerary: ItineraryDay[] = [
         description:
           "Some of the best ramen in the Midwest, allegedly. We'll let Eric be the judge of that!",
         location: "346 E Front St",
+        url: "https://www.google.com/maps/search/?api=1&query=Full+Send+Ramen%2C+346+E+Front+St%2C+Traverse+City+MI",
         icon: "UtensilsCrossed",
         tag: "food",
       },
@@ -103,6 +107,7 @@ export const itinerary: ItineraryDay[] = [
         description:
           "Old-school arcade bar — pinball, Guitar Hero, pool, Big Buck Hunter. Same building as Full Send Ramen!",
         location: "346 E Front St",
+        url: "https://www.google.com/maps/search/?api=1&query=The+Coin+Slot%2C+346+E+Front+St%2C+Traverse+City+MI",
         icon: "Gamepad2",
         tag: "drinks",
       },
@@ -111,6 +116,7 @@ export const itinerary: ItineraryDay[] = [
         title: "Silver Spruce Brewing",
         description:
           "Big open space, Bull & the Bear food truck on site. ~10 min walk (0.6 miles) south of Front St.",
+        url: "https://www.google.com/maps/search/?api=1&query=Silver+Spruce+Brewing%2C+Traverse+City+MI",
         icon: "Beer",
         tag: "drinks",
       },
@@ -120,6 +126,7 @@ export const itinerary: ItineraryDay[] = [
         description:
           "Brewpub with vintage pinball, great pizza + food truck. Short rideshare (1.2 miles) south of downtown. TC Whiskey Stillhouse nearby as well.",
         location: "225 E 16th St",
+        url: "https://www.google.com/maps/search/?api=1&query=Right+Brain+Brewery%2C+225+E+16th+St%2C+Traverse+City+MI",
         icon: "Beer",
         tag: "drinks",
       },
@@ -129,6 +136,7 @@ export const itinerary: ItineraryDay[] = [
         description:
           "Sit-down dinner — upscale Asian fusion (sushi, ramen, pan-Asian), big cocktail list. Eric's kind of spot. Reservation for 12, early seating to leave runway for bars.",
         location: "237 E Front St",
+        url: "https://www.google.com/maps/search/?api=1&query=Red+Ginger%2C+237+E+Front+St%2C+Traverse+City+MI",
         icon: "UtensilsCrossed",
         tag: "food",
       },
@@ -137,6 +145,7 @@ export const itinerary: ItineraryDay[] = [
         title: "The Parlor",
         description:
           "Craft cocktails (smoked old fashioneds), live music till 11, pizza if still hungry.",
+        url: "https://www.google.com/maps/search/?api=1&query=The+Parlor%2C+Traverse+City+MI",
         icon: "Music",
         tag: "drinks",
       },
@@ -145,6 +154,7 @@ export const itinerary: ItineraryDay[] = [
         title: "Kilkenny's (optional)",
         description:
           "Underground Irish pub — dance floor, pool tables, live music, open till 2am. If we still have any enegy left!",
+        url: "https://www.google.com/maps/search/?api=1&query=Kilkenny%27s+Irish+Pub%2C+Traverse+City+MI",
         icon: "PartyPopper",
         tag: "drinks",
       },
@@ -171,6 +181,7 @@ export const itinerary: ItineraryDay[] = [
         title: "Pierce Stocking Scenic Drive",
         description:
           "7.4-mile one-way loop with overlooks. Lake Michigan Overlook (Stop 9/10) is the iconic 450-ft bluff.",
+        url: "https://www.google.com/maps/search/?api=1&query=Pierce+Stocking+Scenic+Drive%2C+Sleeping+Bear+Dunes",
         icon: "Mountain",
         tag: "activity",
       },
@@ -179,6 +190,7 @@ export const itinerary: ItineraryDay[] = [
         title: "The Dune Climb",
         description:
           "The classic. Climb the first big dune for the Glen Lake view. Go barefoot — boots fill with sand.",
+        url: "https://www.google.com/maps/search/?api=1&query=Dune+Climb%2C+Sleeping+Bear+Dunes",
         icon: "TrendingUp",
         tag: "activity",
       },
@@ -194,6 +206,7 @@ export const itinerary: ItineraryDay[] = [
         title: "Glen Haven Beach",
         description:
           "Cool off after the dunes. Clear water, swimming, free maritime museum, restrooms + parking.",
+        url: "https://www.google.com/maps/search/?api=1&query=Glen+Haven+Beach%2C+Glen+Arbor+MI",
         icon: "Waves",
         tag: "activity",
       },
