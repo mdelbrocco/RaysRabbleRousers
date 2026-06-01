@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-cream: #FAF7F2;
+  --color-cream-dark: #F0EBE1;
+  --color-charcoal: #2C2C2C;
+  --color-charcoal-light: #4A4A4A;
+
+  --color-pine-50: #f0f5f0;
+  --color-pine-100: #d9e8d9;
+  --color-pine-200: #b3d1b3;
+  --color-pine-300: #7aad7a;
+  --color-pine-400: #4a8c4a;
+  --color-pine-500: #2d6a2d;
+  --color-pine-600: #245524;
+  --color-pine-700: #1b401b;
+  --color-pine-800: #122b12;
+  --color-pine-900: #0a180a;
+
+  --color-bark-50: #faf6f1;
+  --color-bark-100: #f0e6d6;
+  --color-bark-200: #e0ccad;
+  --color-bark-300: #c9a87a;
+  --color-bark-400: #b38a52;
+  --color-bark-500: #8B6914;
+  --color-bark-600: #6e5310;
+  --color-bark-700: #523e0c;
+  --color-bark-800: #372908;
+  --color-bark-900: #1b1504;
+
+  --color-amber-50: #fff8eb;
+  --color-amber-100: #ffebc2;
+  --color-amber-200: #ffd685;
+  --color-amber-300: #ffc247;
+  --color-amber-400: #FFAA00;
+  --color-amber-500: #e69900;
+  --color-amber-600: #b37700;
+  --color-amber-700: #805500;
+  --color-amber-800: #4d3300;
+  --color-amber-900: #1a1100;
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+}
