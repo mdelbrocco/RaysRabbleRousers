@@ -25,8 +25,12 @@ export default function GettingAround() {
               {gettingAround.ddPlan.title}
             </h3>
           </div>
-          <p className="text-cream/70 text-sm">{gettingAround.ddPlan.description}</p>
-          <p className="text-cream/60 text-sm mt-3 italic">{gettingAround.ddPlan.hybrid}</p>
+          <p className="text-cream/70 text-sm">
+            {gettingAround.ddPlan.description}
+          </p>
+          <p className="text-cream/60 text-sm mt-3 italic">
+            {gettingAround.ddPlan.hybrid}
+          </p>
         </div>
 
         {/* Parking */}
@@ -42,7 +46,7 @@ export default function GettingAround() {
           <ul className="space-y-2">
             {gettingAround.parking.details.map((detail, i) => (
               <li key={i} className="text-cream/70 text-sm flex gap-2">
-                <span className="text-amber-400 mt-1">&#8226;</span>
+                <span className="text-amber-400">&#8226;</span>
                 {detail}
               </li>
             ))}
