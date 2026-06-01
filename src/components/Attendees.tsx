@@ -48,13 +48,20 @@ export default function Attendees() {
                 </p>
               )}
               {person.phone && (
-                <a
-                  href={`tel:${person.phone}`}
-                  className="flex items-center gap-1.5 text-sm text-pine-600 hover:text-pine-800 mt-2"
-                >
-                  <Phone className="w-3.5 h-3.5" />
-                  {person.phone}
-                </a>
+                person.phone === "TBD" ? (
+                  <span className="flex items-center gap-1.5 text-sm text-charcoal-light mt-2">
+                    <Phone className="w-3.5 h-3.5" />
+                    TBD
+                  </span>
+                ) : (
+                  <a
+                    href={`tel:${person.phone}`}
+                    className="flex items-center gap-1.5 text-sm text-pine-600 hover:text-pine-800 mt-2"
+                  >
+                    <Phone className="w-3.5 h-3.5" />
+                    {person.phone}
+                  </a>
+                )
               )}
               {person.email && (
                 <a
