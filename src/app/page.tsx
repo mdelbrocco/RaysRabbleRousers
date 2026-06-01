@@ -8,14 +8,13 @@ import Itinerary from "@/components/Itinerary";
 import GettingAround from "@/components/GettingAround";
 import Lodging from "@/components/Lodging";
 import PackingList from "@/components/PackingList";
-import CostBreakdown from "@/components/CostBreakdown";
 import Attendees from "@/components/Attendees";
 import PhotoGallery from "@/components/PhotoGallery";
 import QuickReference from "@/components/QuickReference";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-  const { authenticated, loading, login } = useAuth();
+  const { authenticated, isCrew, loading } = useAuth();
 
   if (loading) {
     return (
@@ -31,13 +30,12 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
+      <Navbar isCrew={isCrew} />
       <HeroSection />
       <Itinerary />
       <GettingAround />
       <Lodging />
       <PackingList />
-      <CostBreakdown />
       <Attendees />
       <PhotoGallery />
       <QuickReference />

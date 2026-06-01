@@ -32,21 +32,24 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "Mid-morning",
         title: "Hit the Road",
-        description: "Cleveland → Traverse City (~6.5 hrs). Grab groceries + beer on the way in.",
+        description:
+          "Cleveland → Traverse City (~6.5 hrs). Grab groceries + beer on the way in.",
         icon: "Car",
         tag: "logistics",
       },
       {
         time: "Late afternoon",
         title: "Arrive at the VRBO",
-        description: "Unpack, claim beds, crack beers. VRBO is ~20 min from downtown TC.",
+        description:
+          "Unpack, claim beds, crack beers. VRBO is ~20 min from downtown TC.",
         icon: "Home",
         tag: "logistics",
       },
       {
         time: "Evening",
         title: "Burgers on the Grill",
-        description: "Backyard BBQ — flexible for staggered arrivals. People eat when they roll in.",
+        description:
+          "Backyard BBQ — flexible for staggered arrivals. People eat when they roll in.",
         icon: "Flame",
         tag: "food",
       },
@@ -70,7 +73,8 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "Late morning",
         title: "Waterfront Walk",
-        description: "Head into TC (~20 min). Walk Front Street & the Grand Traverse Bay waterfront. Clinch Park beach is at the bottom of downtown.",
+        description:
+          "Head into TC (~20 min). Walk Front Street & the Grand Traverse Bay waterfront. Clinch Park beach is at the bottom of downtown.",
         icon: "Waves",
         tag: "activity",
       },
@@ -85,7 +89,8 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "Noon",
         title: "The Coin Slot",
-        description: "Old-school arcade bar — pinball, Guitar Hero, pool, Big Buck Hunter. Same building as Full Send.",
+        description:
+          "Old-school arcade bar — pinball, Guitar Hero, pool, Big Buck Hunter. Same building as Full Send.",
         location: "346 E Front St",
         icon: "Gamepad2",
         tag: "drinks",
@@ -93,14 +98,16 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "Afternoon",
         title: "Silver Spruce Brewing",
-        description: "Big open space, Bull & the Bear food truck on site. ~10 min walk south of Front St.",
+        description:
+          "Big open space, Bull & the Bear food truck on site. ~10 min walk south of Front St.",
         icon: "Beer",
         tag: "drinks",
       },
       {
         time: "Afternoon",
         title: "Right Brain Brewery (optional)",
-        description: "Brewpub with vintage pinball, great pizza + food truck. Short rideshare south of downtown.",
+        description:
+          "Brewpub with vintage pinball, great pizza + food truck. Short rideshare south of downtown.",
         location: "225 E 16th St",
         icon: "Beer",
         tag: "drinks",
@@ -108,7 +115,8 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "~6:30 PM",
         title: "Cellar & Flame Steakhouse",
-        description: "SPLURGE NIGHT — fine-dining steakhouse + seafood, craft cocktails. Reservation for 12. Early seating to leave runway for bars.",
+        description:
+          "SPLURGE NIGHT — fine-dining steakhouse + seafood, craft cocktails. Reservation for 12. Early seating to leave runway for bars.",
         location: "155 Garland St",
         icon: "UtensilsCrossed",
         tag: "food",
@@ -116,14 +124,16 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "After dinner",
         title: "The Parlor",
-        description: "Craft cocktails (smoked old fashioneds), live music till 11, pizza if still hungry.",
+        description:
+          "Craft cocktails (smoked old fashioneds), live music till 11, pizza if still hungry.",
         icon: "Music",
         tag: "drinks",
       },
       {
         time: "Late night",
         title: "Kilkenny's",
-        description: "Underground Irish pub — dance floor, pool tables, live music, open till 2am. Best spot to close it out.",
+        description:
+          "Underground Irish pub — dance floor, pool tables, live music, open till 2am. Best spot to close it out.",
         icon: "PartyPopper",
         tag: "drinks",
       },
@@ -140,21 +150,24 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "9:00 AM",
         title: "Leave for the Dunes",
-        description: "~70 min drive. Leave early to beat the crowds — lots fill by late morning. Buy park pass at the entrance.",
+        description:
+          "~70 min drive. Leave early to beat the crowds — lots fill by late morning. Buy park pass at the entrance.",
         icon: "Car",
         tag: "logistics",
       },
       {
         time: "~10:30 AM",
         title: "Pierce Stocking Scenic Drive",
-        description: "7.4-mile one-way loop with overlooks. Lake Michigan Overlook (Stop 9/10) is the iconic 450-ft bluff.",
+        description:
+          "7.4-mile one-way loop with overlooks. Lake Michigan Overlook (Stop 9/10) is the iconic 450-ft bluff.",
         icon: "Mountain",
         tag: "activity",
       },
       {
         time: "Late morning",
         title: "The Dune Climb",
-        description: "The classic. Climb the first big dune for the Glen Lake view. Go barefoot — boots fill with sand.",
+        description:
+          "The classic. Climb the first big dune for the Glen Lake view. Go barefoot — boots fill with sand.",
         icon: "TrendingUp",
         tag: "activity",
       },
@@ -168,14 +181,16 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "Afternoon",
         title: "Glen Haven Beach",
-        description: "Cool off after the dunes. Clear water, swimming, free maritime museum, restrooms + parking.",
+        description:
+          "Cool off after the dunes. Clear water, swimming, free maritime museum, restrooms + parking.",
         icon: "Waves",
         tag: "activity",
       },
       {
         time: "Evening",
         title: "Casual Dinner",
-        description: "Farm Club (farm/brewery on Leelanau Peninsula), Bubba's (TC institution, steak frites + burgers), or Smoke and Porter (BBQ). TBD.",
+        description:
+          "Farm Club (farm/brewery on Leelanau Peninsula), Bubba's (TC institution, steak frites + burgers), or Smoke and Porter (BBQ). TBD.",
         icon: "UtensilsCrossed",
         tag: "food",
       },
@@ -199,7 +214,7 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "Late morning",
         title: "Hit the Road",
-        description: "TC → Cleveland (~6.5 hrs). Safe travels, boys.",
+        description: "TC → Cleveland (~6.5 hrs). Safe travels, fam.",
         icon: "Car",
         tag: "logistics",
       },

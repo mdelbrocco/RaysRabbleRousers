@@ -40,7 +40,7 @@ export default function HeroSection() {
           </div>
           <div className="flex items-center gap-2">
             <Users className="w-4 h-4 text-amber-400" />
-            {siteConfig.headcount} guys
+            {siteConfig.headcount} friends
           </div>
         </div>
 

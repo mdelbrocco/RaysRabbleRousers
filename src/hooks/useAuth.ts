@@ -3,28 +3,22 @@
 import { useState, useEffect } from "react";
 import Cookies from "js-cookie";
 
+export type Role = "crew" | "groom" | null;
+
 export function useAuth() {
-  const [authenticated, setAuthenticated] = useState(false);
+  const [role, setRole] = useState<Role>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setAuthenticated(Cookies.get("rrr-auth") === "authenticated");
+    const cookie = Cookies.get("rrr-auth");
+    if (cookie === "crew" || cookie === "groom") {
+      setRole(cookie);
+    }
     setLoading(false);
   }, []);
 
-  const login = async (password: string): Promise<boolean> => {
-    const res = await fetch("/api/verify-password", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ password }),
-    });
+  const authenticated = role !== null;
+  const isCrew = role === "crew";
 
-    if (res.ok) {
-      setAuthenticated(true);
-      return true;
-    }
-    return false;
-  };
-
-  return { authenticated, loading, login };
+  return { authenticated, role, isCrew, loading };
 }

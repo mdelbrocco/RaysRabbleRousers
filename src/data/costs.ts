@@ -7,8 +7,8 @@ export interface CostItem {
 export const costs: CostItem[] = [
   {
     item: "VRBO (3 nights)",
-    perPerson: "TBD",
-    notes: "Splitting 12 ways",
+    perPerson: "~$294",
+    notes: "$3,230 total / 11 (Eric's covered)",
   },
   {
     item: "Gas (Cleveland → TC round trip)",
@@ -52,4 +52,4 @@ export const costs: CostItem[] = [
   },
 ];
 
-export const costSummary = "Estimated total per person: ~$250–400+ (depending on VRBO cost and how hard you go at the bars)";
+export const costSummary = "Estimated total per person: ~$450–600+ (depending on how hard you go at the bars). Eric doesn't pay — we've got him covered.";

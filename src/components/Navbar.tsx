@@ -3,20 +3,29 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Trees } from "lucide-react";
 
-const navLinks = [
+const baseLinks = [
   { label: "Itinerary", href: "#itinerary" },
   { label: "Getting Around", href: "#getting-around" },
   { label: "Lodging", href: "#lodging" },
   { label: "Packing", href: "#packing" },
-  { label: "Costs", href: "#costs" },
   { label: "Crew", href: "#crew" },
   { label: "Photos", href: "#photos" },
   { label: "Contacts", href: "#contacts" },
 ];
 
-export default function Navbar() {
+const crewOnlyLinks = [
+  { label: "Costs", href: "/costs" },
+];
+
+interface NavbarProps {
+  isCrew?: boolean;
+}
+
+export default function Navbar({ isCrew = false }: NavbarProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const navLinks = isCrew ? [...baseLinks, ...crewOnlyLinks] : baseLinks;
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
