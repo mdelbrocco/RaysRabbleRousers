@@ -57,7 +57,7 @@ export const itinerary: ItineraryDay[] = [
         time: "Night",
         title: "Backyard Fire",
         description: "Fire pit, drinks, catch up with the crew.",
-        icon: "Campfire",
+        icon: "BrickWallFire",
         tag: "chill",
       },
     ],
