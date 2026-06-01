@@ -16,8 +16,14 @@ export const lodging = {
     "Backyard with grill and fire pit",
   ],
   houseRules: [
-    "Be respectful of neighbors",
-    "Clean up before checkout on Sunday",
     "No smoking indoors",
+    "Be respectful of neighbors",
+  ],
+  checkoutChecklist: [
+    "Load and start the dishwasher",
+    "Gather used towels",
+    "Remove personal items, leftover food and drinks, and take out the trash",
+    "Turn off the lights, lock the doors, and return the keys",
+    "Leave the sheets and blankets on the beds",
   ],
 };

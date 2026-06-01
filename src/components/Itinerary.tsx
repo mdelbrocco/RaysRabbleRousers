@@ -1,9 +1,10 @@
 "use client";
 
-import { AlertTriangle } from "lucide-react";
+import { AlertTriangle, CheckSquare } from "lucide-react";
 import * as icons from "lucide-react";
 import { itinerary, weatherNote } from "@/data/itinerary";
 import type { Activity, ItineraryDay } from "@/data/itinerary";
+import { lodging } from "@/data/lodging";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 
 const colorMap: Record<string, { border: string; bg: string; badge: string }> = {
@@ -81,6 +82,28 @@ function DayCard({ day }: { day: ItineraryDay }) {
           <ActivityCard key={i} activity={activity} />
         ))}
       </div>
+
+      {/* Checkout checklist on Sunday */}
+      {day.day === "Sunday" && (
+        <div className="px-6 pb-4">
+          <div className="rounded-lg bg-amber-50 border border-amber-200 p-4">
+            <div className="flex items-center gap-2 mb-3">
+              <CheckSquare className="w-4 h-4 text-amber-600" />
+              <p className="font-semibold text-amber-800 text-sm">
+                Checkout Checklist (by {lodging.checkOut})
+              </p>
+            </div>
+            <ul className="grid sm:grid-cols-2 gap-2">
+              {lodging.checkoutChecklist.map((item, i) => (
+                <li key={i} className="text-sm text-amber-700 flex items-center gap-2">
+                  <span className="w-4 h-4 rounded border-2 border-amber-300 flex-shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
