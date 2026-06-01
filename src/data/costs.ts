@@ -21,9 +21,9 @@ export const costs: CostItem[] = [
     notes: "$25/vehicle, split by car",
   },
   {
-    item: "Groceries & Beer (Thursday)",
-    perPerson: "~$20–30",
-    notes: "Burgers, beer, breakfast stuff",
+    item: "Groceries & Beer",
+    perPerson: "~$25–35",
+    notes: "Thursday grill-out, 3 breakfasts, some house beer (BYO welcome)",
   },
   {
     item: "Friday Lunch (Full Send Ramen)",
@@ -31,9 +31,9 @@ export const costs: CostItem[] = [
     notes: "Individual tabs",
   },
   {
-    item: "Friday Dinner (Cellar & Flame)",
-    perPerson: "~$60–100",
-    notes: "Splurge night — steakhouse",
+    item: "Friday Dinner (Red Ginger)",
+    perPerson: "~$45–75",
+    notes: "Upscale Asian fusion — entrées ~$30–45",
   },
   {
     item: "Friday Bars",
@@ -52,4 +52,5 @@ export const costs: CostItem[] = [
   },
 ];
 
-export const costSummary = "Estimated total per person: ~$450–600+ (depending on how hard you go at the bars). Eric doesn't pay — we've got him covered.";
+export const costSummary =
+  "Estimated total per person: ~$450–600+ (depending on how much you spend at the bars). Eric doesn't pay — we've got him covered.";
