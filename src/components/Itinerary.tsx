@@ -1,6 +1,7 @@
 "use client";
 
-import { AlertTriangle, CheckSquare, ExternalLink, Map } from "lucide-react";
+import { useState } from "react";
+import { AlertTriangle, Check, CheckSquare, ExternalLink, Map } from "lucide-react";
 import * as icons from "lucide-react";
 import { itinerary, weatherNote } from "@/data/itinerary";
 import type { Activity, ItineraryDay } from "@/data/itinerary";
@@ -70,6 +71,63 @@ function ActivityCard({ activity }: { activity: Activity }) {
   );
 }
 
+function CheckoutChecklist() {
+  const [checked, setChecked] = useState<Set<string>>(new Set());
+
+  const toggle = (item: string) => {
+    setChecked((prev) => {
+      const next = new Set(prev);
+      if (next.has(item)) {
+        next.delete(item);
+      } else {
+        next.add(item);
+      }
+      return next;
+    });
+  };
+
+  return (
+    <div className="px-6 pb-4">
+      <div className="rounded-lg bg-amber-50 border border-amber-200 p-4">
+        <div className="flex items-center gap-2 mb-3">
+          <CheckSquare className="w-4 h-4 text-amber-600" />
+          <p className="font-semibold text-amber-800 text-sm">
+            Checkout Checklist (by {lodging.checkOut})
+          </p>
+        </div>
+        <ul className="grid sm:grid-cols-2 gap-2">
+          {lodging.checkoutChecklist.map((item) => {
+            const isChecked = checked.has(item);
+            return (
+              <li key={item}>
+                <button
+                  onClick={() => toggle(item)}
+                  className="flex items-center gap-2 w-full text-left text-sm text-amber-700 group"
+                >
+                  <span
+                    className={`w-4 h-4 rounded border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
+                      isChecked
+                        ? "bg-amber-500 border-amber-500"
+                        : "border-amber-300 group-hover:border-amber-400"
+                    }`}
+                  >
+                    {isChecked && <Check className="w-3 h-3 text-white" />}
+                  </span>
+                  <span
+                    className={isChecked ? "line-through text-amber-700/60" : ""}
+                  >
+                    {item}
+                  </span>
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </div>
+  );
+}
+
 function DayCard({ day }: { day: ItineraryDay }) {
   const colors = colorMap[day.color] || colorMap.pine;
 
@@ -107,26 +165,7 @@ function DayCard({ day }: { day: ItineraryDay }) {
       </div>
 
       {/* Checkout checklist on Sunday */}
-      {day.day === "Sunday" && (
-        <div className="px-6 pb-4">
-          <div className="rounded-lg bg-amber-50 border border-amber-200 p-4">
-            <div className="flex items-center gap-2 mb-3">
-              <CheckSquare className="w-4 h-4 text-amber-600" />
-              <p className="font-semibold text-amber-800 text-sm">
-                Checkout Checklist (by {lodging.checkOut})
-              </p>
-            </div>
-            <ul className="grid sm:grid-cols-2 gap-2">
-              {lodging.checkoutChecklist.map((item, i) => (
-                <li key={i} className="text-sm text-amber-700 flex items-center gap-2">
-                  <span className="w-4 h-4 rounded border-2 border-amber-300 flex-shrink-0" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      )}
+      {day.day === "Sunday" && <CheckoutChecklist />}
     </div>
   );
 }
