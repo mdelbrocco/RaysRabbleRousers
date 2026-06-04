@@ -19,7 +19,7 @@ export const gettingAround = {
       "Or hybrid: leave the cars at Old Town overnight (free, ground floor), rideshare/DD home, retrieve cars Saturday morning before the dunes run.",
   },
   rideshare: {
-    title: "Rideshare Reality Check",
+    title: "Note on Rideshares",
     warning:
       "Uber/Lyft exist in TC but get thin + surgey at bar close on summer weekends. Fine for downtown-to-downtown hops; risky for the full ride back to the VRBO. Don't rely on it as the only way home.",
   },

@@ -9,7 +9,7 @@ export default function GettingAround() {
     <SectionWrapper
       id="getting-around"
       title="Getting Around"
-      subtitle="DD plan, parking, and rideshare reality"
+      subtitle="Transportation and parking logistics"
       dark
     >
       <p className="text-cream/80 mb-8">{gettingAround.overview}</p>

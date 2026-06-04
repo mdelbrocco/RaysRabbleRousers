@@ -20,7 +20,7 @@ export interface ItineraryDay {
 }
 
 export const weatherNote =
-  "The dunes are the weather-sensitive day (now Friday). If Friday looks rainy and Saturday's clear, we COULD swap the dunes and city days. We really want a clear day for the dunes if possible.";
+  "The dunes are somewhat weather-sensitive. If Friday looks rainy and Saturday's clear, we COULD swap the dunes and city days. We really want a clear day for the dunes if possible!";
 
 export const itinerary: ItineraryDay[] = [
   {

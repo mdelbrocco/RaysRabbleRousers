@@ -12,7 +12,9 @@ export const packingList: PackingCategory[] = [
       "Swimsuit",
       "Sunscreen (SPF 30+)",
       "Sunglasses",
+      "Hat or ball cap (sun)",
       "Water bottle",
+      "Electrolytes / Liquid IV packets",
       "Phone charger / portable battery",
       "ID & cash",
     ],
@@ -24,7 +26,7 @@ export const packingList: PackingCategory[] = [
       "Hiking shoes or sneakers (for the dunes)",
       "Sandals / flip flops",
       "Layers for evenings",
-      "Nice-ish outfit for Friday dinner",
+      "Nice-ish outfit for Saturday dinner",
     ],
   },
   {
@@ -37,14 +39,20 @@ export const packingList: PackingCategory[] = [
       "Day pack / small backpack for the dunes",
     ],
   },
-  {
-    category: "Optional / Fun",
-    icon: "PartyPopper",
-    items: [
-      "Yard games (cornhole, can jam, etc.)",
-      "Bluetooth speaker",
-      "Cards / poker set",
-      "Camera",
-    ],
-  },
+];
+
+export interface SharedGearItem {
+  item: string;
+  who?: string;
+}
+
+// Group gear — only need one of each. `who` left blank = up for grabs.
+export const sharedGear: SharedGearItem[] = [
+  { item: "Yard games (cornhole, can jam)" },
+  { item: "Bluetooth speaker" },
+  { item: "Cooler(s)" },
+  { item: "Cards / poker set" },
+  { item: "Board games" },
+  { item: "Koozies" },
+  { item: "Camera" },
 ];

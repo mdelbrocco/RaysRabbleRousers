@@ -3,7 +3,7 @@
 import { useState } from "react";
 import * as icons from "lucide-react";
 import { Check } from "lucide-react";
-import { packingList } from "@/data/packing-list";
+import { packingList, sharedGear } from "@/data/packing-list";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 
 function getIcon(name: string) {
@@ -77,6 +77,40 @@ export default function PackingList() {
             </ul>
           </div>
         ))}
+      </div>
+
+      {/* Shared gear — group stuff, only need one of each */}
+      <div className="mt-8 rounded-xl bg-white shadow-md p-6">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="w-10 h-10 rounded-full bg-amber-50 flex items-center justify-center text-amber-600">
+            {getIcon("Users")}
+          </div>
+          <div>
+            <h3 className="font-semibold text-charcoal text-lg">Shared Gear</h3>
+            <p className="text-xs text-charcoal-light">
+              Group stuff &mdash; claim a line so we only bring one of each
+            </p>
+          </div>
+        </div>
+        <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2">
+          {sharedGear.map((gear) => (
+            <li
+              key={gear.item}
+              className="flex items-center justify-between gap-3 border-b border-gray-100 pb-2"
+            >
+              <span className="text-sm text-charcoal">{gear.item}</span>
+              {gear.who ? (
+                <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-pine-100 text-pine-700 whitespace-nowrap">
+                  {gear.who}
+                </span>
+              ) : (
+                <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 text-gray-400 whitespace-nowrap">
+                  claim it
+                </span>
+              )}
+            </li>
+          ))}
+        </ul>
       </div>
 
       <p className="text-center text-sm text-charcoal-light mt-6 italic">
