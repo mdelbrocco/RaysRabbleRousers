@@ -5,23 +5,30 @@ export interface Contact {
 }
 
 export const contacts: Contact[] = [
-  { name: "Red Ginger", phone: "231-944-1733", context: "Friday dinner" },
   {
-    name: "Cellar & Flame Steakhouse",
-    phone: "231-525-0555",
-    context: "Friday dinner alt",
+    name: "Art's Tavern",
+    phone: "231-334-3754",
+    context: "Friday lunch (Glen Arbor)",
+  },
+  {
+    name: "Farm Club",
+    phone: "231-252-3079",
+    context: "Friday dinner — no reservations, go early",
+  },
+  {
+    name: "Firefly",
+    phone: "231-932-1310",
+    context: "Saturday dinner — call day-of for wait",
   },
   {
     name: "The Parlor (walk-in OK)",
     phone: "231-753-3131",
-    context: "Friday nightlife",
+    context: "Saturday nightlife",
   },
-  { name: "Kilkenny's", phone: "231-941-7527", context: "Friday nightlife" },
+  { name: "Kilkenny's", phone: "231-941-7527", context: "Saturday nightlife" },
   {
-    name: "Farm Club",
-    phone: "231-252-3079",
-    context: "Saturday dinner option",
+    name: "Trattoria Stella",
+    phone: "231-929-8989",
+    context: "Cancel reservation — switched to Firefly",
   },
-  { name: "Bubba's", phone: "231-995-0570", context: "Saturday dinner option" },
-  { name: "The Filling Station", phone: "231-946-8168", context: "Restaurant" },
 ];

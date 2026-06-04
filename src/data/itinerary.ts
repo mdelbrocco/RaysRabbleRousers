@@ -83,6 +83,16 @@ export const itinerary: ItineraryDay[] = [
         tag: "logistics",
       },
       {
+        time: "On the way out",
+        title: "Gallagher's Farm Market",
+        description:
+          "Donut stop ~3.5 mi west of town on M-72 — right on the dunes route. Fresh-made, 200+/hour. Grab a dozen for the drive. (Open mid-June–October.)",
+        location: "7237 E Traverse Hwy (M-72)",
+        url: "https://www.google.com/maps/search/?api=1&query=Gallagher%27s+Farm+Market%2C+Traverse+City+MI",
+        icon: "Donut",
+        tag: "food",
+      },
+      {
         time: "~10:30 AM",
         title: "Pierce Stocking Scenic Drive",
         description:
@@ -102,8 +112,11 @@ export const itinerary: ItineraryDay[] = [
       },
       {
         time: "Midday",
-        title: "Lunch in Glen Arbor",
-        description: "Cute town right by the dunes. Grab food between stops.",
+        title: "Lunch — Art's Tavern",
+        description:
+          "Glen Arbor institution since 1934 — burgers, tots, full bar, big-group friendly. The classic post-dune-climb move, right in town. (No reservations, so a 12-top may wait at peak — aim early.)",
+        location: "6487 Western Ave, Glen Arbor",
+        url: "https://www.google.com/maps/search/?api=1&query=Art%27s+Tavern%2C+Glen+Arbor+MI",
         icon: "UtensilsCrossed",
         tag: "food",
       },
@@ -118,9 +131,11 @@ export const itinerary: ItineraryDay[] = [
       },
       {
         time: "Evening",
-        title: "Casual Dinner",
+        title: "Farm Club",
         description:
-          "Farm Club (farm/brewery on Leelanau Peninsula), Bubba's (TC institution, steak frites + burgers), or Smoke and Porter (BBQ). TBD.",
+          "Dinner on the way home — farm/brewery/restaurant on the Leelanau side, ~7 mi from downtown TC (roughly on the route back). Wood-fired food, house beer + wine, relaxed barn vibe. No reservations, so with 12 of us let's aim early — it's popular on summer Fridays.",
+        location: "10051 S Lake Leelanau Dr",
+        url: "https://www.google.com/maps/search/?api=1&query=Farm+Club%2C+10051+S+Lake+Leelanau+Dr%2C+Traverse+City+MI",
         icon: "UtensilsCrossed",
         tag: "food",
       },
@@ -176,17 +191,7 @@ export const itinerary: ItineraryDay[] = [
         tag: "drinks",
       },
       {
-        time: "4:00 PM",
-        title: "Trattoria Stella",
-        description:
-          "Sit-down dinner — award-winning Northern Italian in the historic Village at Grand Traverse Commons. House-made charcuterie, fresh pasta, big wine list. Reservation for 12 at 4 PM — early seating leaves plenty of runway for the bars. It's ~1.5 mi from downtown, so let's grab a rideshare and leave the cars in their original parking spots. (Red Ginger is our backup if a table for 12 frees up.)",
-        location: "The Village at Grand Traverse Commons",
-        url: "https://www.google.com/maps/search/?api=1&query=Trattoria+Stella%2C+Traverse+City+MI",
-        icon: "UtensilsCrossed",
-        tag: "food",
-      },
-      {
-        time: "Early evening",
+        time: "Afternoon",
         title: "Silver Spruce Brewing (pick one)",
         description:
           "Brewery option — we'll likely do just one of Silver Spruce or Right Brain. Big open space, Bull & the Bear food truck on site. ~10 min walk (0.6 miles) south of Front St.",
@@ -195,7 +200,7 @@ export const itinerary: ItineraryDay[] = [
         tag: "drinks",
       },
       {
-        time: "Evening",
+        time: "Afternoon",
         title: "Right Brain Brewery (pick one)",
         description:
           "Brewery option — we'll likely do just one of Silver Spruce or Right Brain. Brewpub with vintage pinball, great pizza + food truck. Short hop (1.2 miles) south of downtown; TC Whiskey Stillhouse nearby as well.",
@@ -203,6 +208,16 @@ export const itinerary: ItineraryDay[] = [
         url: "https://www.google.com/maps/search/?api=1&query=Right+Brain+Brewery%2C+225+E+16th+St%2C+Traverse+City+MI",
         icon: "Beer",
         tag: "drinks",
+      },
+      {
+        time: "~6 PM",
+        title: "Firefly",
+        description:
+          "Sit-down dinner. A little bit of everything: sushi, sandwiches, entrees, and drinks right on the Boardman River downtown. Confirmed they can seat 12 — call day-of to check the wait. We can pass the time at the Parlor (across the street) or Rare Bird or Brady's (a couple minutes walk).",
+        location: "310 S Cass St",
+        url: "https://www.google.com/maps/search/?api=1&query=Firefly%2C+310+S+Cass+St%2C+Traverse+City+MI",
+        icon: "UtensilsCrossed",
+        tag: "food",
       },
       {
         time: "Evening",

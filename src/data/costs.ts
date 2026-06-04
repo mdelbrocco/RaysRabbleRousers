@@ -26,9 +26,9 @@ export const costs: CostItem[] = [
     notes: "Thursday grill-out, 3 breakfasts, some house beer (BYO welcome)",
   },
   {
-    item: "Friday Dinner",
+    item: "Friday Dinner (Farm Club)",
     perPerson: "~$20–35",
-    notes: "Casual — TBD restaurant after the dunes",
+    notes: "Restaurant / brewery / bakery / farm / market — on the drive back from the dunes",
   },
   {
     item: "Saturday Lunch (Full Send Ramen)",
@@ -36,9 +36,9 @@ export const costs: CostItem[] = [
     notes: "Individual tabs",
   },
   {
-    item: "Saturday Dinner (Trattoria Stella)",
-    perPerson: "~$45–75",
-    notes: "Upscale Italian — pasta/entrées ~$30–45",
+    item: "Saturday Dinner (Firefly)",
+    perPerson: "~$30–55",
+    notes: "Sushi, sandwiches + entrées ($14–33) downtown — varies with drinks",
   },
   {
     item: "Saturday Bars",
