@@ -26,24 +26,24 @@ export const costs: CostItem[] = [
     notes: "Thursday grill-out, 3 breakfasts, some house beer (BYO welcome)",
   },
   {
-    item: "Friday Lunch (Full Send Ramen)",
+    item: "Friday Dinner",
+    perPerson: "~$20–35",
+    notes: "Casual — TBD restaurant after the dunes",
+  },
+  {
+    item: "Saturday Lunch (Full Send Ramen)",
     perPerson: "~$15–20",
     notes: "Individual tabs",
   },
   {
-    item: "Friday Dinner (Red Ginger)",
+    item: "Saturday Dinner (Trattoria Stella)",
     perPerson: "~$45–75",
-    notes: "Upscale Asian fusion — entrées ~$30–45",
+    notes: "Upscale Italian — pasta/entrées ~$30–45",
   },
   {
-    item: "Friday Bars",
+    item: "Saturday Bars",
     perPerson: "Varies",
     notes: "Individual tabs",
-  },
-  {
-    item: "Saturday Dinner",
-    perPerson: "~$20–35",
-    notes: "Casual — TBD restaurant",
   },
   {
     item: "Parking (downtown)",
