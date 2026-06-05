@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, MapPin } from "lucide-react";
+import { Phone } from "lucide-react";
 import { contacts } from "@/data/contacts";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 

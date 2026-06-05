@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/hooks/useAuth";
 import { ArrowLeft, DollarSign } from "lucide-react";
@@ -28,10 +29,10 @@ export default function CostsPage() {
     <div className="min-h-screen bg-pine-800 text-cream">
       <div className="max-w-3xl mx-auto px-4 md:px-8 py-12">
         {/* Back link */}
-        <a href="/" className="inline-flex items-center gap-2 text-cream/60 hover:text-amber-400 text-sm font-medium transition-colors mb-8">
+        <Link href="/" className="inline-flex items-center gap-2 text-cream/60 hover:text-amber-400 text-sm font-medium transition-colors mb-8">
           <ArrowLeft className="w-4 h-4" />
           Back to main page
-        </a>
+        </Link>
 
         <h1 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-amber-400 mb-2">Cost Breakdown</h1>
         <p className="text-cream/60 mb-8">Per-person estimates. Eric doesn&apos;t see this page.</p>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type SubmitEvent } from "react";
 import { Trees, Lock, Eye, EyeOff } from "lucide-react";
 import { siteConfig } from "@/data/site-config";
 
@@ -14,7 +14,7 @@ export default function PasswordGate({ onSuccess }: PasswordGateProps) {
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
     setError(false);
