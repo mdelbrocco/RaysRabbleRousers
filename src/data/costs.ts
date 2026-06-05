@@ -26,9 +26,15 @@ export const costs: CostItem[] = [
     notes: "Thursday grill-out, 3 breakfasts, some house beer (BYO welcome)",
   },
   {
+    item: "Friday Lunch (Art's Tavern)",
+    perPerson: "~$15–25",
+    notes: "Glen Arbor tavern — burgers + a beer, individual tabs",
+  },
+  {
     item: "Friday Dinner (Farm Club)",
-    perPerson: "~$20–35",
-    notes: "Restaurant / brewery / bakery / farm / market — on the drive back from the dunes",
+    perPerson: "~$25–35",
+    notes:
+      "Restaurant / brewery / bakery / farm / market — on the drive back from the dunes",
   },
   {
     item: "Saturday Lunch (Full Send Ramen)",
