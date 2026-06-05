@@ -33,8 +33,8 @@ export default function Home() {
       <Navbar isCrew={isCrew} />
       <HeroSection />
       <Itinerary />
-      <GettingAround />
       <Lodging />
+      <GettingAround />
       <PackingList />
       <Attendees />
       <PhotoGallery />
