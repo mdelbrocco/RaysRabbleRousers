@@ -105,7 +105,7 @@ export const itinerary: ItineraryDay[] = [
         time: "Late morning",
         title: "The Dune Climb",
         description:
-          "The classic. Climb the first big dune for the Glen Lake view. Go barefoot — boots fill with sand.",
+          "The classic. Climb the first big dune for the Glen Lake view. We are NOT planning to do the full 3.5 mile hike 😂.",
         url: "https://www.google.com/maps/search/?api=1&query=Dune+Climb%2C+Sleeping+Bear+Dunes",
         icon: "TrendingUp",
         tag: "activity",
