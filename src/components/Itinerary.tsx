@@ -1,18 +1,37 @@
 "use client";
 
 import { useState } from "react";
-import { AlertTriangle, Check, CheckSquare, ExternalLink, Map } from "lucide-react";
+import {
+  AlertTriangle,
+  Check,
+  CheckSquare,
+  ExternalLink,
+  Map,
+} from "lucide-react";
 import * as icons from "lucide-react";
 import { itinerary, weatherNote } from "@/data/itinerary";
 import type { Activity, ItineraryDay } from "@/data/itinerary";
 import { lodging } from "@/data/lodging";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 
-const colorMap: Record<string, { border: string; bg: string; badge: string }> = {
-  pine: { border: "border-l-pine-500", bg: "bg-pine-50", badge: "bg-pine-100 text-pine-700" },
-  amber: { border: "border-l-amber-400", bg: "bg-amber-50", badge: "bg-amber-100 text-amber-700" },
-  bark: { border: "border-l-bark-400", bg: "bg-bark-50", badge: "bg-bark-100 text-bark-700" },
-};
+const colorMap: Record<string, { border: string; bg: string; badge: string }> =
+  {
+    pine: {
+      border: "border-l-pine-500",
+      bg: "bg-pine-50",
+      badge: "bg-pine-100 text-pine-700",
+    },
+    amber: {
+      border: "border-l-amber-400",
+      bg: "bg-amber-50",
+      badge: "bg-amber-100 text-amber-700",
+    },
+    bark: {
+      border: "border-l-bark-400",
+      bg: "bg-bark-50",
+      badge: "bg-bark-100 text-bark-700",
+    },
+  };
 
 const tagColors: Record<string, string> = {
   food: "bg-amber-100 text-amber-800",
@@ -58,10 +77,14 @@ function ActivityCard({ activity }: { activity: Activity }) {
             <ExternalLink className="w-3.5 h-3.5 flex-shrink-0" />
           </a>
         ) : (
-          <h4 className="font-semibold text-charcoal mt-0.5">{activity.title}</h4>
+          <h4 className="font-semibold text-charcoal mt-0.5">
+            {activity.title}
+          </h4>
         )}
         {activity.description && (
-          <p className="text-sm text-charcoal-light mt-0.5">{activity.description}</p>
+          <p className="text-sm text-charcoal-light mt-0.5">
+            {activity.description}
+          </p>
         )}
         {activity.location && (
           <p className="text-xs text-pine-600 mt-1">{activity.location}</p>
@@ -114,7 +137,9 @@ function CheckoutChecklist() {
                     {isChecked && <Check className="w-3 h-3 text-white" />}
                   </span>
                   <span
-                    className={isChecked ? "line-through text-amber-700/60" : ""}
+                    className={
+                      isChecked ? "line-through text-amber-700/60" : ""
+                    }
                   >
                     {item}
                   </span>
@@ -175,13 +200,15 @@ export default function Itinerary() {
     <SectionWrapper
       id="itinerary"
       title="The Itinerary"
-      subtitle="Four days. One mission. Send it for Eric."
+      subtitle="Four days. Twelve friends. One awesome weekend!"
     >
       {/* Weather flexibility note */}
       <div className="mb-8 p-4 rounded-lg bg-amber-50 border border-amber-200 flex gap-3">
         <AlertTriangle className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" />
         <div>
-          <p className="font-semibold text-amber-800 text-sm">Weather Flexibility</p>
+          <p className="font-semibold text-amber-800 text-sm">
+            Weather Flexibility
+          </p>
           <p className="text-sm text-amber-700 mt-1">{weatherNote}</p>
         </div>
       </div>

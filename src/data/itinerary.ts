@@ -28,7 +28,7 @@ export const itinerary: ItineraryDay[] = [
     date: "June 25",
     title: "Arrival & Settle In",
     emoji: "🚗",
-    summary: "Drive in from Cleveland, grill out, fire pit, yard games",
+    summary: "Drive in from Cleveland, grill out, yard games, fire pit",
     color: "pine",
     mapUrl: "https://maps.app.goo.gl/yJLWaCDgwz25yy9RA",
     activities: [
@@ -70,7 +70,7 @@ export const itinerary: ItineraryDay[] = [
     date: "June 26",
     title: "Sleeping Bear Dunes",
     emoji: "🏖️",
-    summary: "Scenic drive, dune climb, beach, casual dinner",
+    summary: "Scenic drive, dune climb, lunch, beach, casual dinner",
     color: "bark",
     mapUrl: "https://maps.app.goo.gl/cH5t817p2aUhHHPJA",
     activities: [
@@ -147,7 +147,7 @@ export const itinerary: ItineraryDay[] = [
     title: "Traverse City Day",
     emoji: "🍻",
     summary:
-      "Waterfront, arcade bar, brewery crawl, sit-down dinner, nightlife",
+      "Waterfront, arcade bar, ramen, breweries, sit-down dinner, nightlife",
     color: "amber",
     mapUrl: "https://maps.app.goo.gl/MEykTXzy7Eqk8gEK7",
     activities: [
@@ -155,7 +155,7 @@ export const itinerary: ItineraryDay[] = [
         time: "Morning",
         title: "Good Harbor Coffee & Bakery",
         description:
-          "Fuel up before the day — coffee and fresh-baked pastries to get the crew moving. Easy starting spot downtown.",
+          "Fuel up before the day — coffee and fresh-baked pastries to get us moving. Easy starting spot downtown.",
         location: "111 W Front St",
         url: "https://www.google.com/maps/search/?api=1&query=Good+Harbor+Coffee+%26+Bakery%2C+111+W+Front+St%2C+Traverse+City+MI",
         icon: "Coffee",
@@ -184,7 +184,7 @@ export const itinerary: ItineraryDay[] = [
         time: "Noon",
         title: "The Coin Slot",
         description:
-          "Old-school arcade bar — pinball, Guitar Hero, pool, Big Buck Hunter. Same building as Full Send Ramen!",
+          "Old-school arcade bar — pinball, Guitar Hero, pool, etc. Same building as Full Send Ramen!",
         location: "346 E Front St",
         url: "https://www.google.com/maps/search/?api=1&query=The+Coin+Slot%2C+346+E+Front+St%2C+Traverse+City+MI",
         icon: "Gamepad2",

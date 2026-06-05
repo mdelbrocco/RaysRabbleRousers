@@ -26,9 +26,4 @@ export const contacts: Contact[] = [
     context: "Saturday nightlife",
   },
   { name: "Kilkenny's", phone: "231-941-7527", context: "Saturday nightlife" },
-  {
-    name: "Trattoria Stella",
-    phone: "231-929-8989",
-    context: "Cancel reservation — switched to Firefly",
-  },
 ];
