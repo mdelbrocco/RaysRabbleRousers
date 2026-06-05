@@ -6,22 +6,14 @@ import SectionWrapper from "@/components/ui/SectionWrapper";
 
 export default function Lodging() {
   return (
-    <SectionWrapper
-      id="lodging"
-      title="The House"
-      subtitle="Home base for the weekend"
-    >
+    <SectionWrapper id="lodging" title="The House" subtitle="Home base for the weekend">
       <div className="rounded-xl bg-white shadow-md overflow-hidden">
         <div className="bg-pine-50 px-6 py-4 border-b border-pine-100">
           <div className="flex items-center gap-3">
             <Home className="w-6 h-6 text-pine-600" />
             <div>
-              <h3 className="font-[family-name:var(--font-playfair)] text-xl font-bold text-charcoal">
-                {lodging.name}
-              </h3>
-              <span className="text-xs font-medium text-pine-600 uppercase tracking-wide">
-                {lodging.type}
-              </span>
+              <h3 className="font-[family-name:var(--font-playfair)] text-xl font-bold text-charcoal">{lodging.name}</h3>
+              <span className="text-xs font-medium text-pine-600 uppercase tracking-wide">{lodging.type}</span>
             </div>
           </div>
         </div>
@@ -80,15 +72,11 @@ export default function Lodging() {
                 </li>
               ))}
             </ul>
-            <a
-              href="#itinerary"
-              className="inline-block text-sm text-pine-600 hover:text-pine-800 font-medium mt-4"
-            >
+            <a href="#itinerary" className="inline-block text-sm text-pine-600 hover:text-pine-800 font-medium mt-4">
               See checkout checklist in Sunday&apos;s itinerary &darr;
             </a>
           </div>
         </div>
-
       </div>
     </SectionWrapper>
   );

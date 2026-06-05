@@ -19,15 +19,9 @@ export default function HeroSection() {
       </div>
 
       <div className="relative z-10 text-center px-4 max-w-3xl">
-        <p className="text-amber-400 text-sm font-semibold tracking-[0.3em] uppercase mb-4">
-          Bachelor Weekend
-        </p>
-        <h1 className="font-[family-name:var(--font-playfair)] text-5xl md:text-7xl font-bold text-cream mb-4 leading-tight">
-          {siteConfig.title}
-        </h1>
-        <p className="text-cream/70 text-xl md:text-2xl mb-10 font-[family-name:var(--font-playfair)] italic">
-          Celebrating {siteConfig.groom}
-        </p>
+        <p className="text-amber-400 text-sm font-semibold tracking-[0.3em] uppercase mb-4">Bachelor Weekend</p>
+        <h1 className="font-[family-name:var(--font-playfair)] text-5xl md:text-7xl font-bold text-cream mb-4 leading-tight">{siteConfig.title}</h1>
+        <p className="text-cream/70 text-xl md:text-2xl mb-10 font-[family-name:var(--font-playfair)] italic">Celebrating {siteConfig.groom}</p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-cream/60 text-sm mb-12">
           <div className="flex items-center gap-2">
@@ -44,10 +38,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <a
-          href="#itinerary"
-          className="inline-block px-8 py-3 rounded-lg bg-amber-400 text-pine-900 font-semibold hover:bg-amber-300 transition-colors"
-        >
+        <a href="#itinerary" className="inline-block px-8 py-3 rounded-lg bg-amber-400 text-pine-900 font-semibold hover:bg-amber-300 transition-colors">
           See the Plan
         </a>
       </div>

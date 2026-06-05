@@ -1,37 +1,30 @@
 "use client";
 
 import { useState } from "react";
-import {
-  AlertTriangle,
-  Check,
-  CheckSquare,
-  ExternalLink,
-  Map,
-} from "lucide-react";
+import { AlertTriangle, Check, CheckSquare, ExternalLink, Map } from "lucide-react";
 import * as icons from "lucide-react";
 import { itinerary, weatherNote } from "@/data/itinerary";
 import type { Activity, ItineraryDay } from "@/data/itinerary";
 import { lodging } from "@/data/lodging";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 
-const colorMap: Record<string, { border: string; bg: string; badge: string }> =
-  {
-    pine: {
-      border: "border-l-pine-500",
-      bg: "bg-pine-50",
-      badge: "bg-pine-100 text-pine-700",
-    },
-    amber: {
-      border: "border-l-amber-400",
-      bg: "bg-amber-50",
-      badge: "bg-amber-100 text-amber-700",
-    },
-    bark: {
-      border: "border-l-bark-400",
-      bg: "bg-bark-50",
-      badge: "bg-bark-100 text-bark-700",
-    },
-  };
+const colorMap: Record<string, { border: string; bg: string; badge: string }> = {
+  pine: {
+    border: "border-l-pine-500",
+    bg: "bg-pine-50",
+    badge: "bg-pine-100 text-pine-700",
+  },
+  amber: {
+    border: "border-l-amber-400",
+    bg: "bg-amber-50",
+    badge: "bg-amber-100 text-amber-700",
+  },
+  bark: {
+    border: "border-l-bark-400",
+    bg: "bg-bark-50",
+    badge: "bg-bark-100 text-bark-700",
+  },
+};
 
 const tagColors: Record<string, string> = {
   food: "bg-amber-100 text-amber-800",
@@ -50,21 +43,11 @@ function getIcon(name: string) {
 function ActivityCard({ activity }: { activity: Activity }) {
   return (
     <div className="flex gap-4 py-3">
-      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-pine-600">
-        {getIcon(activity.icon)}
-      </div>
+      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-pine-600">{getIcon(activity.icon)}</div>
       <div className="flex-1 min-w-0">
         <div className="flex items-start gap-2 flex-wrap">
-          <span className="text-xs font-medium text-charcoal-light whitespace-nowrap">
-            {activity.time}
-          </span>
-          {activity.tag && (
-            <span
-              className={`text-xs px-2 py-0.5 rounded-full font-medium ${tagColors[activity.tag]}`}
-            >
-              {activity.tag}
-            </span>
-          )}
+          <span className="text-xs font-medium text-charcoal-light whitespace-nowrap">{activity.time}</span>
+          {activity.tag && <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${tagColors[activity.tag]}`}>{activity.tag}</span>}
         </div>
         {activity.url ? (
           <a
@@ -77,18 +60,10 @@ function ActivityCard({ activity }: { activity: Activity }) {
             <ExternalLink className="w-3.5 h-3.5 flex-shrink-0" />
           </a>
         ) : (
-          <h4 className="font-semibold text-charcoal mt-0.5">
-            {activity.title}
-          </h4>
+          <h4 className="font-semibold text-charcoal mt-0.5">{activity.title}</h4>
         )}
-        {activity.description && (
-          <p className="text-sm text-charcoal-light mt-0.5">
-            {activity.description}
-          </p>
-        )}
-        {activity.location && (
-          <p className="text-xs text-pine-600 mt-1">{activity.location}</p>
-        )}
+        {activity.description && <p className="text-sm text-charcoal-light mt-0.5">{activity.description}</p>}
+        {activity.location && <p className="text-xs text-pine-600 mt-1">{activity.location}</p>}
       </div>
     </div>
   );
@@ -114,35 +89,22 @@ function CheckoutChecklist() {
       <div className="rounded-lg bg-amber-50 border border-amber-200 p-4">
         <div className="flex items-center gap-2 mb-3">
           <CheckSquare className="w-4 h-4 text-amber-600" />
-          <p className="font-semibold text-amber-800 text-sm">
-            Checkout Checklist (by {lodging.checkOut})
-          </p>
+          <p className="font-semibold text-amber-800 text-sm">Checkout Checklist (by {lodging.checkOut})</p>
         </div>
         <ul className="grid sm:grid-cols-2 gap-2">
           {lodging.checkoutChecklist.map((item) => {
             const isChecked = checked.has(item);
             return (
               <li key={item}>
-                <button
-                  onClick={() => toggle(item)}
-                  className="flex items-center gap-2 w-full text-left text-sm text-amber-700 group"
-                >
+                <button onClick={() => toggle(item)} className="flex items-center gap-2 w-full text-left text-sm text-amber-700 group">
                   <span
                     className={`w-4 h-4 rounded border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                      isChecked
-                        ? "bg-amber-500 border-amber-500"
-                        : "border-amber-300 group-hover:border-amber-400"
+                      isChecked ? "bg-amber-500 border-amber-500" : "border-amber-300 group-hover:border-amber-400"
                     }`}
                   >
                     {isChecked && <Check className="w-3 h-3 text-white" />}
                   </span>
-                  <span
-                    className={
-                      isChecked ? "line-through text-amber-700/60" : ""
-                    }
-                  >
-                    {item}
-                  </span>
+                  <span className={isChecked ? "line-through text-amber-700/60" : ""}>{item}</span>
                 </button>
               </li>
             );
@@ -157,9 +119,7 @@ function DayCard({ day }: { day: ItineraryDay }) {
   const colors = colorMap[day.color] || colorMap.pine;
 
   return (
-    <div
-      className={`rounded-xl bg-white shadow-md border-l-4 ${colors.border} overflow-hidden`}
-    >
+    <div className={`rounded-xl bg-white shadow-md border-l-4 ${colors.border} overflow-hidden`}>
       <div className={`px-6 py-4 ${colors.bg}`}>
         <div className="flex items-center gap-3">
           <span className="text-2xl">{day.emoji}</span>
@@ -197,18 +157,12 @@ function DayCard({ day }: { day: ItineraryDay }) {
 
 export default function Itinerary() {
   return (
-    <SectionWrapper
-      id="itinerary"
-      title="The Itinerary"
-      subtitle="Four days. Twelve friends. One awesome weekend!"
-    >
+    <SectionWrapper id="itinerary" title="The Itinerary" subtitle="Four days. Twelve friends. One awesome weekend!">
       {/* Weather flexibility note */}
       <div className="mb-8 p-4 rounded-lg bg-amber-50 border border-amber-200 flex gap-3">
         <AlertTriangle className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" />
         <div>
-          <p className="font-semibold text-amber-800 text-sm">
-            Weather Flexibility
-          </p>
+          <p className="font-semibold text-amber-800 text-sm">Weather Flexibility</p>
           <p className="text-sm text-amber-700 mt-1">{weatherNote}</p>
         </div>
       </div>

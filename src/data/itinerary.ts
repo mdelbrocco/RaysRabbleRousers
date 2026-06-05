@@ -35,24 +35,21 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "Mid-morning",
         title: "Hit the Road",
-        description:
-          "Cleveland → Traverse City (~6.5 hrs). Grab groceries + drinks (Costco?) on the way in.",
+        description: "Cleveland → Traverse City (~6.5 hrs). Grab groceries + drinks (Costco?) on the way in.",
         icon: "Car",
         tag: "logistics",
       },
       {
         time: "Late afternoon",
         title: "Arrive at the VRBO",
-        description:
-          "Unpack, claim beds, settle in. VRBO is ~20 min from downtown TC.",
+        description: "Unpack, claim beds, settle in. VRBO is ~20 min from downtown TC.",
         icon: "Home",
         tag: "logistics",
       },
       {
         time: "Evening",
         title: "Burgers on the Grill",
-        description:
-          "Backyard BBQ — flexible for staggered arrivals. People eat when they roll in.",
+        description: "Backyard BBQ — flexible for staggered arrivals. People eat when they roll in.",
         icon: "Flame",
         tag: "food",
       },
@@ -77,8 +74,7 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "9:00 AM",
         title: "Leave for the Dunes",
-        description:
-          "~70 min drive. Leave early to beat the crowds — lots fill by late morning. Buy park pass at the entrance.",
+        description: "~70 min drive. Leave early to beat the crowds — lots fill by late morning. Buy park pass at the entrance.",
         icon: "Car",
         tag: "logistics",
       },
@@ -95,8 +91,7 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "~10:30 AM",
         title: "Pierce Stocking Scenic Drive",
-        description:
-          "7.4-mile one-way loop with overlooks. Lake Michigan Overlook (Stop 9/10) is the iconic 450-ft bluff.",
+        description: "7.4-mile one-way loop with overlooks. Lake Michigan Overlook (Stop 9/10) is the iconic 450-ft bluff.",
         url: "https://www.google.com/maps/search/?api=1&query=Pierce+Stocking+Scenic+Drive%2C+Sleeping+Bear+Dunes",
         icon: "Mountain",
         tag: "activity",
@@ -104,8 +99,7 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "Late morning",
         title: "The Dune Climb",
-        description:
-          "The classic. Climb the first big dune for the Glen Lake view. We are NOT planning to do the full 3.5 mile hike 😂.",
+        description: "The classic. Climb the first big dune for the Glen Lake view. We are NOT planning to do the full 3.5 mile hike 😂.",
         url: "https://www.google.com/maps/search/?api=1&query=Dune+Climb%2C+Sleeping+Bear+Dunes",
         icon: "TrendingUp",
         tag: "activity",
@@ -123,8 +117,7 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "Afternoon",
         title: "Glen Haven Beach",
-        description:
-          "Cool off after the dunes. Clear water, swimming, free maritime museum, restrooms + parking.",
+        description: "Cool off after the dunes. Clear water, swimming, free maritime museum, restrooms + parking.",
         url: "https://www.google.com/maps/search/?api=1&query=Glen+Haven+Beach%2C+Glen+Arbor+MI",
         icon: "Waves",
         tag: "activity",
@@ -146,16 +139,14 @@ export const itinerary: ItineraryDay[] = [
     date: "June 27",
     title: "Traverse City Day",
     emoji: "🍻",
-    summary:
-      "Waterfront, arcade bar, ramen, breweries, sit-down dinner, nightlife",
+    summary: "Waterfront, arcade bar, ramen, breweries, sit-down dinner, nightlife",
     color: "amber",
     mapUrl: "https://maps.app.goo.gl/MEykTXzy7Eqk8gEK7",
     activities: [
       {
         time: "Morning",
         title: "Good Harbor Coffee & Bakery",
-        description:
-          "Fuel up before the day — coffee and fresh-baked pastries to get us moving. Easy starting spot downtown.",
+        description: "Fuel up before the day — coffee and fresh-baked pastries to get us moving. Easy starting spot downtown.",
         location: "111 W Front St",
         url: "https://www.google.com/maps/search/?api=1&query=Good+Harbor+Coffee+%26+Bakery%2C+111+W+Front+St%2C+Traverse+City+MI",
         icon: "Coffee",
@@ -164,8 +155,7 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "Late morning",
         title: "Waterfront Walk",
-        description:
-          "Head into TC (~20 min). Walk Front Street & the Grand Traverse Bay waterfront. Clinch Park beach is at the bottom of downtown.",
+        description: "Head into TC (~20 min). Walk Front Street & the Grand Traverse Bay waterfront. Clinch Park beach is at the bottom of downtown.",
         url: "https://www.google.com/maps/search/?api=1&query=Clinch+Park%2C+Traverse+City+MI",
         icon: "Waves",
         tag: "activity",
@@ -173,8 +163,7 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "Noon",
         title: "Full Send Ramen",
-        description:
-          "Some of the best ramen in the Midwest, allegedly. We'll let Eric be the judge of that!",
+        description: "Some of the best ramen in the Midwest, allegedly. We'll let Eric be the judge of that!",
         location: "346 E Front St",
         url: "https://www.google.com/maps/search/?api=1&query=Full+Send+Ramen%2C+346+E+Front+St%2C+Traverse+City+MI",
         icon: "UtensilsCrossed",
@@ -183,8 +172,7 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "Noon",
         title: "The Coin Slot",
-        description:
-          "Old-school arcade bar — pinball, Guitar Hero, pool, etc. Same building as Full Send Ramen!",
+        description: "Old-school arcade bar — pinball, Guitar Hero, pool, etc. Same building as Full Send Ramen!",
         location: "346 E Front St",
         url: "https://www.google.com/maps/search/?api=1&query=The+Coin+Slot%2C+346+E+Front+St%2C+Traverse+City+MI",
         icon: "Gamepad2",
@@ -222,8 +210,7 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "Evening",
         title: "The Parlor",
-        description:
-          "Craft cocktails (smoked old fashioneds), live music till 11, pizza if still hungry.",
+        description: "Craft cocktails (smoked old fashioneds), live music till 11, pizza if still hungry.",
         url: "https://www.google.com/maps/search/?api=1&query=The+Parlor%2C+Traverse+City+MI",
         icon: "Music",
         tag: "drinks",
@@ -231,8 +218,7 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "Late night",
         title: "Kilkenny's (optional)",
-        description:
-          "Underground Irish pub — dance floor, pool tables, live music, open till 2am. If we still have any enegy left!",
+        description: "Underground Irish pub — dance floor, pool tables, live music, open till 2am. If we still have any enegy left!",
         url: "https://www.google.com/maps/search/?api=1&query=Kilkenny%27s+Irish+Pub%2C+Traverse+City+MI",
         icon: "PartyPopper",
         tag: "drinks",

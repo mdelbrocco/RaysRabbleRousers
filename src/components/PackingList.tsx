@@ -28,21 +28,12 @@ export default function PackingList() {
   };
 
   return (
-    <SectionWrapper
-      id="packing"
-      title="Packing List"
-      subtitle="Don't forget the sunscreen"
-    >
+    <SectionWrapper id="packing" title="Packing List" subtitle="Don't forget the sunscreen">
       <div className="grid sm:grid-cols-2 gap-6">
         {packingList.map((category) => (
-          <div
-            key={category.category}
-            className="rounded-xl bg-white shadow-md p-6"
-          >
+          <div key={category.category} className="rounded-xl bg-white shadow-md p-6">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-pine-50 flex items-center justify-center text-pine-600">
-                {getIcon(category.icon)}
-              </div>
+              <div className="w-10 h-10 rounded-full bg-pine-50 flex items-center justify-center text-pine-600">{getIcon(category.icon)}</div>
               <h3 className="font-semibold text-charcoal text-lg">{category.category}</h3>
             </div>
             <ul className="space-y-2">
@@ -50,26 +41,15 @@ export default function PackingList() {
                 const isChecked = checked.has(item);
                 return (
                   <li key={item}>
-                    <button
-                      onClick={() => toggle(item)}
-                      className="flex items-center gap-3 w-full text-left py-1 group"
-                    >
+                    <button onClick={() => toggle(item)} className="flex items-center gap-3 w-full text-left py-1 group">
                       <div
                         className={`w-5 h-5 rounded border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                          isChecked
-                            ? "bg-pine-500 border-pine-500"
-                            : "border-gray-300 group-hover:border-pine-400"
+                          isChecked ? "bg-pine-500 border-pine-500" : "border-gray-300 group-hover:border-pine-400"
                         }`}
                       >
                         {isChecked && <Check className="w-3 h-3 text-white" />}
                       </div>
-                      <span
-                        className={`text-sm transition-colors ${
-                          isChecked ? "line-through text-charcoal-light" : "text-charcoal"
-                        }`}
-                      >
-                        {item}
-                      </span>
+                      <span className={`text-sm transition-colors ${isChecked ? "line-through text-charcoal-light" : "text-charcoal"}`}>{item}</span>
                     </button>
                   </li>
                 );
@@ -82,31 +62,20 @@ export default function PackingList() {
       {/* Shared gear — group stuff, only need one of each */}
       <div className="mt-8 rounded-xl bg-white shadow-md p-6">
         <div className="flex items-center gap-3 mb-4">
-          <div className="w-10 h-10 rounded-full bg-amber-50 flex items-center justify-center text-amber-600">
-            {getIcon("Users")}
-          </div>
+          <div className="w-10 h-10 rounded-full bg-amber-50 flex items-center justify-center text-amber-600">{getIcon("Users")}</div>
           <div>
             <h3 className="font-semibold text-charcoal text-lg">Shared Gear</h3>
-            <p className="text-xs text-charcoal-light">
-              Group stuff &mdash; claim a line so we only bring one of each
-            </p>
+            <p className="text-xs text-charcoal-light">Group stuff &mdash; claim a line so we only bring one of each</p>
           </div>
         </div>
         <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2">
           {sharedGear.map((gear) => (
-            <li
-              key={gear.item}
-              className="flex items-center justify-between gap-3 border-b border-gray-100 pb-2"
-            >
+            <li key={gear.item} className="flex items-center justify-between gap-3 border-b border-gray-100 pb-2">
               <span className="text-sm text-charcoal">{gear.item}</span>
               {gear.who ? (
-                <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-pine-100 text-pine-700 whitespace-nowrap">
-                  {gear.who}
-                </span>
+                <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-pine-100 text-pine-700 whitespace-nowrap">{gear.who}</span>
               ) : (
-                <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 text-gray-400 whitespace-nowrap">
-                  claim it
-                </span>
+                <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 text-gray-400 whitespace-nowrap">claim it</span>
               )}
             </li>
           ))}

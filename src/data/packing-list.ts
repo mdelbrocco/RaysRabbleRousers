@@ -22,22 +22,12 @@ export const packingList: PackingCategory[] = [
   {
     category: "Clothing",
     icon: "Shirt",
-    items: [
-      "Hiking shoes or sneakers (for the dunes)",
-      "Sandals / flip flops",
-      "Layers for evenings",
-      "Nice-ish outfit for Saturday dinner",
-    ],
+    items: ["Hiking shoes or sneakers (for the dunes)", "Sandals / flip flops", "Layers for evenings", "Nice-ish outfit for Saturday dinner"],
   },
   {
     category: "Beach & Outdoors",
     icon: "Sun",
-    items: [
-      "Towel",
-      "Beach blanket",
-      "Bug spray",
-      "Day pack / small backpack for the dunes",
-    ],
+    items: ["Towel", "Beach blanket", "Bug spray", "Day pack / small backpack for the dunes"],
   },
 ];
 

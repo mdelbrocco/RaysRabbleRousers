@@ -6,12 +6,7 @@ import SectionWrapper from "@/components/ui/SectionWrapper";
 
 export default function GettingAround() {
   return (
-    <SectionWrapper
-      id="getting-around"
-      title="Getting Around"
-      subtitle="Transportation and parking logistics"
-      dark
-    >
+    <SectionWrapper id="getting-around" title="Getting Around" subtitle="Transportation and parking logistics" dark>
       <p className="text-cream/80 mb-8">{gettingAround.overview}</p>
 
       <div className="grid md:grid-cols-2 gap-6">
@@ -21,16 +16,10 @@ export default function GettingAround() {
             <div className="w-10 h-10 rounded-full bg-amber-400/20 flex items-center justify-center">
               <Users className="w-5 h-5 text-amber-400" />
             </div>
-            <h3 className="text-lg font-semibold text-cream">
-              {gettingAround.ddPlan.title}
-            </h3>
+            <h3 className="text-lg font-semibold text-cream">{gettingAround.ddPlan.title}</h3>
           </div>
-          <p className="text-cream/70 text-sm">
-            {gettingAround.ddPlan.description}
-          </p>
-          <p className="text-cream/60 text-sm mt-3 italic">
-            {gettingAround.ddPlan.hybrid}
-          </p>
+          <p className="text-cream/70 text-sm">{gettingAround.ddPlan.description}</p>
+          <p className="text-cream/60 text-sm mt-3 italic">{gettingAround.ddPlan.hybrid}</p>
         </div>
 
         {/* Parking */}
@@ -39,9 +28,7 @@ export default function GettingAround() {
             <div className="w-10 h-10 rounded-full bg-amber-400/20 flex items-center justify-center">
               <ParkingCircle className="w-5 h-5 text-amber-400" />
             </div>
-            <h3 className="text-lg font-semibold text-cream">
-              {gettingAround.parking.name}
-            </h3>
+            <h3 className="text-lg font-semibold text-cream">{gettingAround.parking.name}</h3>
           </div>
           <ul className="space-y-2">
             {gettingAround.parking.details.map((detail, i) => (
@@ -58,12 +45,8 @@ export default function GettingAround() {
           <div className="flex items-start gap-3">
             <AlertCircle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
             <div>
-              <h3 className="text-lg font-semibold text-red-300">
-                {gettingAround.rideshare.title}
-              </h3>
-              <p className="text-red-200/70 text-sm mt-1">
-                {gettingAround.rideshare.warning}
-              </p>
+              <h3 className="text-lg font-semibold text-red-300">{gettingAround.rideshare.title}</h3>
+              <p className="text-red-200/70 text-sm mt-1">{gettingAround.rideshare.warning}</p>
             </div>
           </div>
         </div>

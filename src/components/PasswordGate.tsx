@@ -40,9 +40,7 @@ export default function PasswordGate({ onSuccess }: PasswordGateProps) {
         <div className="flex justify-center mb-6">
           <Trees className="w-16 h-16 text-amber-400" />
         </div>
-        <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-bold text-cream mb-2">
-          {siteConfig.title}
-        </h1>
+        <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-bold text-cream mb-2">{siteConfig.title}</h1>
         <p className="text-cream/70 text-lg mb-2">{siteConfig.subtitle}</p>
         <p className="text-cream/50 text-sm mb-10">
           {siteConfig.dates} &middot; {siteConfig.location}
@@ -70,9 +68,7 @@ export default function PasswordGate({ onSuccess }: PasswordGateProps) {
               {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
             </button>
           </div>
-          {error && (
-            <p className="text-red-400 text-sm">Wrong password. Try again.</p>
-          )}
+          {error && <p className="text-red-400 text-sm">Wrong password. Try again.</p>}
           <button
             type="submit"
             disabled={loading || !password}

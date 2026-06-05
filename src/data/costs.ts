@@ -33,8 +33,7 @@ export const costs: CostItem[] = [
   {
     item: "Friday Dinner (Farm Club)",
     perPerson: "~$25–35",
-    notes:
-      "Restaurant / brewery / bakery / farm / market — on the drive back from the dunes",
+    notes: "Restaurant / brewery / bakery / farm / market — on the drive back from the dunes",
   },
   {
     item: "Saturday Lunch (Full Send Ramen)",
@@ -58,5 +57,4 @@ export const costs: CostItem[] = [
   },
 ];
 
-export const costSummary =
-  "Estimated total per person: ~$450–600+ (depending on how much you spend at the bars). Eric doesn't pay — we've got him covered.";
+export const costSummary = "Estimated total per person: ~$450–600+ (depending on how much you spend at the bars). Eric doesn't pay — we've got him covered.";

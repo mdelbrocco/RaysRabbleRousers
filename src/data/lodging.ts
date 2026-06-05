@@ -15,10 +15,7 @@ export const lodging = {
     "3 full bathrooms",
     "Backyard with grill and fire pit",
   ],
-  houseRules: [
-    "No smoking indoors",
-    "Be respectful of neighbors",
-  ],
+  houseRules: ["No smoking indoors", "Be respectful of neighbors"],
   checkoutChecklist: [
     "Load and start the dishwasher",
     "Gather used towels",
