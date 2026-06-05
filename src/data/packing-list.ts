@@ -49,10 +49,11 @@ export interface SharedGearItem {
 // Group gear — only need one of each. `who` left blank = up for grabs.
 export const sharedGear: SharedGearItem[] = [
   { item: "Yard games (cornhole, can jam)" },
+  { item: "Board games / Cards" },
   { item: "Bluetooth speaker" },
   { item: "Cooler(s)" },
-  { item: "Cards / poker set" },
-  { item: "Board games" },
   { item: "Koozies" },
   { item: "Camera" },
+  { item: "EZ Pass (per car)" },
+  { item: "America the Beautiful Pass (per car)" },
 ];
