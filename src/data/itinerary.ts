@@ -72,7 +72,7 @@ export const itinerary: ItineraryDay[] = [
     emoji: "🏖️",
     summary: "Scenic drive, dune climb, beach, casual dinner",
     color: "bark",
-    mapUrl: "https://maps.app.goo.gl/cmzSz4y1HZec64Vr7",
+    mapUrl: "https://maps.app.goo.gl/cH5t817p2aUhHHPJA",
     activities: [
       {
         time: "9:00 AM",
@@ -149,7 +149,7 @@ export const itinerary: ItineraryDay[] = [
     summary:
       "Waterfront, arcade bar, brewery crawl, sit-down dinner, nightlife",
     color: "amber",
-    mapUrl: "https://maps.app.goo.gl/epJ4kJo8xi2Mi1P56",
+    mapUrl: "https://maps.app.goo.gl/MEykTXzy7Eqk8gEK7",
     activities: [
       {
         time: "Morning",
