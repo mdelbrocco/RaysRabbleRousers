@@ -5,8 +5,8 @@ import { Menu, X, Trees } from "lucide-react";
 
 const baseLinks = [
   { label: "Itinerary", href: "#itinerary" },
-  { label: "Getting Around", href: "#getting-around" },
   { label: "Lodging", href: "#lodging" },
+  { label: "Getting Around", href: "#getting-around" },
   { label: "Packing", href: "#packing" },
   { label: "Crew", href: "#crew" },
   { label: "Photos", href: "#photos" },
