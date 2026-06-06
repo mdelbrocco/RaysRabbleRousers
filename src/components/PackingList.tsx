@@ -65,7 +65,7 @@ export default function PackingList() {
           <div className="w-10 h-10 rounded-full bg-amber-50 flex items-center justify-center text-amber-600">{getIcon("Users")}</div>
           <div>
             <h3 className="font-semibold text-charcoal text-lg">Shared Gear</h3>
-            <p className="text-xs text-charcoal-light">Group stuff &mdash; claim a line so we only bring one of each</p>
+            <p className="text-xs text-charcoal-light">Group stuff &mdash; claim in advance (tell Matt) so we only bring one of each</p>
           </div>
         </div>
         <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2">

@@ -24,11 +24,7 @@ function getServerSnapshot(): Role | undefined {
 }
 
 export function useAuth() {
-  const snapshot = useSyncExternalStore(
-    subscribe,
-    getSnapshot,
-    getServerSnapshot,
-  );
+  const snapshot = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 
   const loading = snapshot === undefined;
   const role: Role = snapshot ?? null;
