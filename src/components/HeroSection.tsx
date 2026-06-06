@@ -1,7 +1,8 @@
 "use client";
 
-import { MapPin, Calendar, Users } from "lucide-react";
+import { MapPin, Calendar, Users, ChevronDown } from "lucide-react";
 import { siteConfig } from "@/data/site-config";
+import Countdown from "@/components/Countdown";
 
 export default function HeroSection() {
   return (
@@ -23,6 +24,8 @@ export default function HeroSection() {
         <h1 className="font-[family-name:var(--font-playfair)] text-5xl md:text-7xl font-bold text-cream mb-4 leading-tight">{siteConfig.title}</h1>
         <p className="text-cream/70 text-xl md:text-2xl mb-10 font-[family-name:var(--font-playfair)] italic">Celebrating {siteConfig.groom}</p>
 
+        <Countdown />
+
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-cream/60 text-sm mb-12">
           <div className="flex items-center gap-2">
             <Calendar className="w-4 h-4 text-amber-400" />
@@ -38,16 +41,13 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <a href="#itinerary" className="inline-block px-8 py-3 rounded-lg bg-amber-400 text-pine-900 font-semibold hover:bg-amber-300 transition-colors">
+        <a
+          href="#itinerary"
+          className="group inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-amber-400 text-pine-900 font-semibold hover:bg-amber-300 transition-colors"
+        >
           See the Plan
+          <ChevronDown className="w-4 h-4 transition-transform group-hover:translate-y-0.5" />
         </a>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-cream/30 rounded-full flex justify-center pt-2">
-          <div className="w-1.5 h-3 bg-cream/30 rounded-full" />
-        </div>
       </div>
     </section>
   );
