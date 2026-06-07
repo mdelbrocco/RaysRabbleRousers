@@ -119,7 +119,7 @@ function DayCard({ day }: { day: ItineraryDay }) {
   const colors = colorMap[day.color] || colorMap.pine;
 
   return (
-    <div className={`rounded-xl bg-white shadow-md border-l-4 ${colors.border} overflow-hidden`}>
+    <div id={`Itinerary-${day.day}`} className={`rounded-xl bg-white shadow-md border-l-4 ${colors.border} overflow-hidden`}>
       <div className={`px-6 py-4 ${colors.bg}`}>
         <div className="flex items-center gap-3">
           <span className="text-2xl">{day.emoji}</span>

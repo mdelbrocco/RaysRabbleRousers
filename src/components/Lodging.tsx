@@ -72,8 +72,8 @@ export default function Lodging() {
                 </li>
               ))}
             </ul>
-            <a href="#itinerary" className="inline-block text-sm text-pine-600 hover:text-pine-800 font-medium mt-4">
-              See checkout checklist in Sunday&apos;s itinerary &darr;
+            <a href="#Itinerary-Sunday" className="inline-block text-sm text-pine-600 hover:text-pine-800 font-medium mt-4">
+              See checkout checklist in Sunday&apos;s itinerary &uarr;
             </a>
           </div>
         </div>
