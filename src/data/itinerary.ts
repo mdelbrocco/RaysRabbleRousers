@@ -89,7 +89,7 @@ export const itinerary: ItineraryDay[] = [
         tag: "food",
       },
       {
-        time: "~10:30 AM",
+        time: "~9:30 AM",
         title: "Pierce Stocking Scenic Drive",
         description: "7.4-mile one-way loop with overlooks. Lake Michigan Overlook (Stop 9/10) is the iconic 450-ft bluff.",
         url: "https://www.google.com/maps/search/?api=1&query=Pierce+Stocking+Scenic+Drive%2C+Sleeping+Bear+Dunes",
