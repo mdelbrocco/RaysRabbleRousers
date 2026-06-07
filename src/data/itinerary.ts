@@ -72,7 +72,7 @@ export const itinerary: ItineraryDay[] = [
     mapUrl: "https://maps.app.goo.gl/cH5t817p2aUhHHPJA",
     activities: [
       {
-        time: "9:00 AM",
+        time: "~8:00 AM",
         title: "Leave for the Dunes",
         description: "~70 min drive. Leave early to beat the crowds — lots fill by late morning. Buy park pass at the entrance.",
         icon: "Car",
