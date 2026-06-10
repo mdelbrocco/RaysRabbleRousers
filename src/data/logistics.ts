@@ -14,12 +14,12 @@ export const gettingAround = {
   ddPlan: {
     title: "Designated Driver Plan",
     description: "2–3 DDs drive everyone in; park at Old Town structure. DDs handle the ~20-min drive home at close.",
-    hybrid: "Or hybrid: leave the cars at Old Town overnight (free, ground floor), rideshare/DD home, retrieve cars Saturday morning before the dunes run.",
+    hybrid: "Or hybrid: leave the cars at Old Town overnight (free, ground floor), rideshare home, retrieve cars Sunday morning before heading back to CLE.",
   },
   rideshare: {
     title: "Note on Rideshares",
     warning:
       "Uber/Lyft exist in TC but get thin + surgey at bar close on summer weekends. Fine for downtown-to-downtown hops; risky for the full ride back to the VRBO. Don't rely on it as the only way home.",
   },
-  vehicles: "Likely 3 vehicles. Each needs a $25 national park pass (or one America the Beautiful pass per car) for the dunes on Saturday.",
+  vehicles: "Likely 3 vehicles. Each needs a $25 national park pass (or one America the Beautiful pass per car) for the dunes on Friday.",
 };

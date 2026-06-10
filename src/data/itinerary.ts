@@ -40,7 +40,7 @@ export const itinerary: ItineraryDay[] = [
         tag: "logistics",
       },
       {
-        time: "Late afternoon",
+        time: "Late afternoon / early evening",
         title: "Arrive at the VRBO",
         description: "Unpack, claim beds, settle in. VRBO is ~20 min from downtown TC.",
         icon: "Home",
@@ -80,11 +80,11 @@ export const itinerary: ItineraryDay[] = [
       },
       {
         time: "On the way out",
-        title: "Gallagher's Farm Market",
+        title: "Gallagher's Farm Market & Bakery",
         description:
-          "Donut stop ~3.5 mi west of town on M-72 — right on the dunes route. Fresh-made, 200+/hour. Grab a dozen for the drive. (Open mid-June–October.)",
+          "Donut stop ~3.5 mi west of town on M-72 — right on the dunes route. Grab a few fresh-made donuts for the drive! (Note: google maps shows 'temporarily closed', but they are open mid-June through October)",
         location: "7237 E Traverse Hwy (M-72)",
-        url: "https://www.google.com/maps/search/?api=1&query=Gallagher%27s+Farm+Market%2C+Traverse+City+MI",
+        url: "https://www.google.com/maps/place/GALLAGHER'S+FARM+MARKET+AND+BAKERY/@44.7756694,-85.7464483,4275m/data=!3m1!1e3!4m10!1m2!2m1!1sGallagher's+Farm+Market,+Traverse+City+MI!3m6!1s0x881e2e23e50da6fd:0x79cb1adfc0ca41d8!8m2!3d44.7756694!4d-85.7103994!15sCilHYWxsYWdoZXIncyBGYXJtIE1hcmtldCwgVHJhdmVyc2UgQ2l0eSBNSVoqIihnYWxsYWdoZXIncyBmYXJtIG1hcmtldCB0cmF2ZXJzZSBjaXR5IG1pkgEOZmFybWVyc19tYXJrZXSaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnM0TkZrd2RHaE1WbXh6V2pGV00xUXliRXhoYW1nMVkyNWFVRlJGUlJBQuABAPoBBAgAEEg!16s%2Fg%2F1tlmnyk5?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D",
         icon: "Donut",
         tag: "food",
       },
@@ -183,6 +183,7 @@ export const itinerary: ItineraryDay[] = [
         title: "Silver Spruce Brewing (pick one)",
         description:
           "Brewery option — we'll likely do just one of Silver Spruce or Right Brain. Big open space, Bull & the Bear food truck on site. ~10 min walk (0.6 miles) south of Front St.",
+        location: "439 E Eighth St",
         url: "https://www.google.com/maps/search/?api=1&query=Silver+Spruce+Brewing%2C+Traverse+City+MI",
         icon: "Beer",
         tag: "drinks",
@@ -211,6 +212,7 @@ export const itinerary: ItineraryDay[] = [
         time: "Evening",
         title: "The Parlor",
         description: "Craft cocktails (smoked old fashioneds), live music till 11, pizza if still hungry.",
+        location: "205 Lake Ave",
         url: "https://www.google.com/maps/search/?api=1&query=The+Parlor%2C+Traverse+City+MI",
         icon: "Music",
         tag: "drinks",
@@ -218,7 +220,8 @@ export const itinerary: ItineraryDay[] = [
       {
         time: "Late night",
         title: "Kilkenny's (optional)",
-        description: "Underground Irish pub — dance floor, pool tables, live music, open till 2am. If we still have any enegy left!",
+        description: "Underground Irish pub — dance floor, pool tables, live music, open till 2am. If we still have any energy left!",
+        location: "400 ½ W Front St",
         url: "https://www.google.com/maps/search/?api=1&query=Kilkenny%27s+Irish+Pub%2C+Traverse+City+MI",
         icon: "PartyPopper",
         tag: "drinks",
