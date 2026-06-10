@@ -75,7 +75,7 @@ export default function PackingList() {
               {gear.who ? (
                 <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-pine-100 text-pine-700 whitespace-nowrap">{gear.who}</span>
               ) : (
-                <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 text-gray-400 whitespace-nowrap">claim it</span>
+                <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 text-gray-400 whitespace-nowrap">TBD</span>
               )}
             </li>
           ))}
