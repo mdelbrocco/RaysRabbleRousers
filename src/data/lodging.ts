@@ -18,9 +18,10 @@ export const lodging = {
   houseRules: ["No smoking indoors", "Be respectful of neighbors"],
   checkoutChecklist: [
     "Load and start the dishwasher",
+    "Take out the trash",
     "Gather used towels",
-    "Remove personal items, leftover food and drinks, and take out the trash",
-    "Turn off the lights, lock the doors, and return the keys",
     "Leave the sheets and blankets on the beds",
+    "Remove personal items (including leftover food and drinks)",
+    "Turn off the lights, lock the doors, and return the keys",
   ],
 };
