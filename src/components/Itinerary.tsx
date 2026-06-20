@@ -62,7 +62,7 @@ function ActivityCard({ activity }: { activity: Activity }) {
         ) : (
           <h4 className="font-semibold text-charcoal mt-0.5">{activity.title}</h4>
         )}
-        {activity.description && <p className="text-sm text-charcoal-light mt-0.5">{activity.description}</p>}
+        {activity.description && <p className="text-sm text-charcoal-light mt-0.5 whitespace-pre-line">{activity.description}</p>}
         {activity.location && <p className="text-xs text-pine-600 mt-1">{activity.location}</p>}
       </div>
     </div>
