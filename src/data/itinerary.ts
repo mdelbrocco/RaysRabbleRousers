@@ -145,7 +145,7 @@ export const itinerary: ItineraryDay[] = [
         time: "~5:00 PM",
         title: "Farm Club",
         description:
-          "Dinner on the way home — farm/brewery/restaurant on the Leelanau side, ~7 mi from downtown TC (we route back via Lake Leelanau, so it's right on the way). Wood-fired food, house beer + wine, relaxed barn vibe. No reservations and the kitchen closes at 8 — with 12 of us let's aim for ~5. Worth a call to ask how they seat big groups: 231-252-3079.",
+          "Dinner on the way home — farm/brewery/restaurant on the Leelanau side, ~7 mi from downtown TC (we route back via Lake Leelanau, so it's right on the way). Wood-fired food, house beer + wine, relaxed barn vibe. No reservations and the kitchen closes at 8, so we'll aim for a relatively early dinner.",
         location: "10051 S Lake Leelanau Dr",
         url: "https://www.google.com/maps/search/?api=1&query=Farm+Club%2C+10051+S+Lake+Leelanau+Dr%2C+Traverse+City+MI",
         icon: "UtensilsCrossed",
