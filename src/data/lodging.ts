@@ -14,6 +14,7 @@ export const lodging = {
     "5 bedrooms, sleeps 18",
     "3 full bathrooms",
     "Backyard with grill and fire pit",
+    "Code is 7337",
   ],
   houseRules: ["No smoking indoors", "Be respectful of neighbors"],
   checkoutChecklist: [
