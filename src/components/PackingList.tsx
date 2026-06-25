@@ -83,7 +83,7 @@ export default function PackingList() {
       </div>
 
       <p className="text-center text-sm text-charcoal-light mt-6 italic">
-        Late June in TC is typically high 70s &ndash; low 80s. Pack layers for evenings on the water.
+        Late June in TC is typically high 70s &ndash; low 80s. Pack layers for evenings - it goes down to the upper 50s.
       </p>
     </SectionWrapper>
   );
