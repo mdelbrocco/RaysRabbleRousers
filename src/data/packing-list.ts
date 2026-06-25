@@ -9,25 +9,29 @@ export const packingList: PackingCategory[] = [
     category: "Essentials",
     icon: "Backpack",
     items: [
-      "Swimsuit",
-      "Sunscreen (SPF 30+)",
-      "Sunglasses",
-      "Hat or ball cap (sun)",
       "Water bottle",
       "Electrolytes / Liquid IV packets",
-      "Phone charger / portable battery",
+      "Phone charger",
+      "Glasses/contact lenses (if applicable!)",
+      "Shower stuff (e.g. Shampoo/conditioner)",
       "ID & cash",
     ],
   },
   {
     category: "Clothing",
     icon: "Shirt",
-    items: ["Hiking shoes or sneakers (for the dunes)", "Sandals / flip flops", "Layers for evenings", "Nice-ish outfit for Saturday dinner"],
+    items: [
+      "Swimsuit",
+      "Hiking shoes or sneakers (for dunes day)",
+      "Nice-ish outfit for Saturday dinner",
+      "light jacket for evenings",
+      "Sandals / flip flops (optional)",
+    ],
   },
   {
     category: "Beach & Outdoors",
     icon: "Sun",
-    items: ["Towel", "Beach blanket", "Bug spray", "Day pack / small backpack for the dunes"],
+    items: ["Sunscreen", "Bug spray", "Sunglasses", "Hat", "Day pack / small backpack for the dunes", "Beach Towel (esp. if swimming)"],
   },
 ];
 
@@ -40,14 +44,10 @@ export interface SharedGearItem {
 export const sharedGear: SharedGearItem[] = [
   { item: "Yard games - Can Jam / Ultimate disc", who: "Matt" },
   { item: "Board games", who: "Probably Igor" },
-  { item: "Playing cards" },
   { item: "Bluetooth speaker", who: "Dan" },
   { item: "Cooler(s)", who: "Hirsh, Eric" },
-  { item: "Koozies" },
+  { item: "Nintendo Switch", who: "Eric, Dan" },
+  { item: "Boba!", who: "Keung" },
   { item: "EZ Pass (car 1)", who: "Dan" },
   { item: "EZ Pass (car 2)", who: "Igor" },
-  { item: "EZ Pass (car 3)" },
-  { item: "America the Beautiful Pass (car 1)" },
-  { item: "America the Beautiful Pass (car 2)" },
-  { item: "America the Beautiful Pass (car 3)" },
 ];
