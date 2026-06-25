@@ -13,6 +13,7 @@ export const packingList: PackingCategory[] = [
       "Electrolytes / Liquid IV packets",
       "Phone charger",
       "Glasses/contact lenses (if applicable!)",
+      "Toiletries (e.g. toothbrush, deodorant)",
       "Shower stuff (e.g. Shampoo/conditioner)",
       "ID & cash",
     ],
