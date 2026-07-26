@@ -10,8 +10,18 @@ export default function PhotoGallery() {
         <div className="w-16 h-16 rounded-full bg-pine-50 flex items-center justify-center mx-auto mb-4">
           <Camera className="w-8 h-8 text-pine-400" />
         </div>
-        <h3 className="font-[family-name:var(--font-playfair)] text-xl font-bold text-charcoal mb-2">Photos Coming Soon</h3>
-        <p className="text-charcoal-light max-w-md mx-auto">This section will be updated with photos after the trip. For now, focus on making the memories.</p>
+        <h3 className="font-[family-name:var(--font-playfair)] text-xl font-bold text-charcoal mb-2">Photos!</h3>
+        <p className="text-charcoal-light max-w-md mx-auto">
+          See fun memories from the trip - or add to them - in the google drive{" "}
+          <a
+            href="https://drive.google.com/file/d/1roLz7EtUwiMNZOPQu8QI1RtI_k8g4lAH/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-pine-600 underline underline-offset-2 hover:text-pine-800 transition-colors"
+          >
+            here!
+          </a>
+        </p>
       </div>
     </SectionWrapper>
   );
