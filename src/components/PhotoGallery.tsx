@@ -14,7 +14,7 @@ export default function PhotoGallery() {
         <p className="text-charcoal-light max-w-md mx-auto">
           See fun memories from the trip - or add to them - in the google drive{" "}
           <a
-            href="https://drive.google.com/file/d/1roLz7EtUwiMNZOPQu8QI1RtI_k8g4lAH/view?usp=drive_link"
+            href="https://drive.google.com/drive/folders/1O0-VAUklbEEHvAqBHN5SQgiA7n1JHi5-?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="font-medium text-pine-600 underline underline-offset-2 hover:text-pine-800 transition-colors"
